@@ -1,5 +1,6 @@
 import React from "react";
 // import "../styles/custom
+import Image from 'next/image'
 function Header() {
   return (
     <div>
@@ -9,7 +10,7 @@ function Header() {
             <div className="col-md-2 col-xs-4">
               <div className="pre-header3b">
                 <a>
-                  <img src="https://cosmetikaa.com/images/logo.png" alt="" />
+                  <Image src="https://cosmetikaa.com/images/logo.png" layout="fill" alt="" />
                 </a>
               </div>
             </div>
@@ -18,10 +19,10 @@ function Header() {
               <div className="pre-header3a">
                 <form action="">
                   <input type="text" placeholder="what are you looking for?" />
-                  <button type="submit">
-                    <img
+                  <button  className="buttonn" type="submit">
+                    <Image
                       src="https://cosmetikaa.com/images/search.png"
-                      alt=""
+                     layout="fill"
                     />
                   </button>
                 </form>
@@ -33,36 +34,36 @@ function Header() {
                   <li className="open-searchbar hidden-md hidden-lg">
                     <a>
                       {" "}
-                      <img
+                      <Image
                         src="https://cosmetikaa.com/images/search.png"
-                        alt=""
+                        layout="fill"
                       />
                     </a>
                   </li>
                   <li>
                     <a>
-                      <img
+                      <Image
                         src="https://cosmetikaa.com/images/like.png"
-                        alt=""
+                        layout="fill"
                       />
                     </a>
                   </li>
                   <li>
                     <a>
-                      <img
+                      <Image
                         src="https://cosmetikaa.com/images/cart.png"
-                        alt=""
+                        layout="fill"
                       />
                       <span className="bag-label">0</span>
                     </a>
                   </li>
                   <li>
                     <a>
-                      <img
+                      <Image
                         src="https://cosmetikaa.com/images/user.png"
-                        alt=""
+                        layout="fill"
                       />{" "}
-                      <p className="">Account</p>
+                      <p className="account">Account</p>
                     </a>
                   </li>
                   <li className="open-sidebar hidden-md hidden-lg">
@@ -83,10 +84,10 @@ function Header() {
             <div className="col-md-12">
               <div className="pre-header4b">
                 <ul>
-                  {/* <li className="hidden-md hidden-lg" ><img src="images/logo.png"/>  <i className="fa fa-close close-sidebar"></i> </li> */}
+                  {/* <li className="hidden-md hidden-lg" ><Image src="images/logo.png"/>  <i className="fa fa-close close-sidebar"></i> </li> */}
                   <li>
                     <a>
-                      <img src="" />
+                      {/* <Image src="" layout="fill"/> */}
                       <span>
                         Hair Care &amp; Styling{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
@@ -137,7 +138,7 @@ function Header() {
                   </li>
                   <li>
                     <a>
-                      <img src="images/categories.png" />
+                      {/* <Image src="" layout="fill"/> */}
                       <span>
                         Bath &amp; Body Care{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
@@ -209,7 +210,7 @@ function Header() {
                   </li>
                   <li>
                     <a>
-                      <img src="images/categories.png" />
+                      {/* <Image src="" layout="fill"/> */}
                       <span>
                         Makeup{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
@@ -248,7 +249,7 @@ function Header() {
                   </li>
                   <li>
                     <a>
-                      <img src="images/categories.png" />
+                      {/* <Image src="" layout="fill"/> */}
                       <span>
                         Fragnances{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
@@ -286,7 +287,7 @@ function Header() {
                   </li>
                   <li>
                     <a>
-                      <img src="images/categories.png" />
+                      {/* <Image src="" layout="fill"/> */}
                       <span>
                         Skin Care{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
@@ -296,7 +297,7 @@ function Header() {
                   </li>
                   <li>
                     <a>
-                      <img src="images/categories.png" />
+                      {/* <Image src=""/> */}
                       <span>
                         Health &amp; Wellness{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>

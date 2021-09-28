@@ -7,7 +7,15 @@ input:after {
   -ms-user-select: initial;
   user-select: initial;
 }
-
+.buttonn>div{
+  position: relative !important;
+}
+.buttonn>div>img{
+  position: relative !important;
+  width: 22px !important;
+  height: auto !important;
+  min-width: inherit !important;
+}
 .bannerSlide {
   box-shadow: none !important;
   margin: 0 !important;
@@ -273,6 +281,7 @@ a:hover {
 }
 
 .confetti-button {
+   width: 50%;
   display: inline-block;
   font-size: 1em;
   -webkit-appearance: none;
@@ -566,9 +575,22 @@ a:hover {
   width: 19px;
   vertical-align: top;
 }
-
+.account{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
 .pre-header3b {
   text-align: center;
+}
+.pre-header3b>a>div{
+  position: relative !important;
+}
+.pre-header3b>a>div>img{
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  
 }
 .pre-header3b img {
   width: 100%;
@@ -592,6 +614,16 @@ a:hover {
   color: #36474e;
   font-size: 12px;
   display: block;
+}
+.pre-header3c>ul>li>a>div{
+  position: relative !important;
+  display: inline-block !important;
+}
+.pre-header3c>ul>li>a>div>img{
+  position: relative !important;
+  width: 35px !important;
+  height: auto !important;
+  min-width: inherit !important;
 }
 .pre-header3c ul li a > img ~ p {
   margin: 0;
@@ -901,13 +933,13 @@ a:hover {
 }
 
 .fifth-sec {
-  background: url("https://cosmetikaa.com/images/7.jpg");
+  background: url("../public/banner\ \(1\).jpg");
   background-size: cover;
   background-position: center;
   margin-top: 50px;
 }
 .fifth-seca {
-  padding: 150px 0px;
+  padding: 90px 0px;
 }
 .fifth-secb {
 }
@@ -1017,13 +1049,13 @@ a:hover {
   border-radius: 5px;
   overflow: hidden;
   background: #fff;
-  min-height: 340px;
-  max-height: 340px;
+  min-height: 263px;
+  max-height: 263px;
 }
-.daily-essential1aa > a > div {
+.daily-essential1aa > a > div>div {
   position: relative !important;
 }
-.daily-essential1aa > a > div > img {
+.daily-essential1aa > a > div > div>img {
   position: relative !important;
   width: 100% !important;
   height: auto !important;
@@ -1157,6 +1189,25 @@ a:hover {
 }
 .footer2-box {
   text-align: right;
+}
+.footer2-box>div{
+  display: inline-block !important;
+  position: relative !important;
+}
+.payment{
+  
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+
+
+}
+.footer2-box>div>img{
+  position: relative !important;
+  margin-left: 50px !important;
+    width: 300px !important;
+    height: auto !important;
+    min-width: inherit !important;
 }
 .footer2-box:nth-child(2) {
 }

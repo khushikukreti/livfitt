@@ -1,6 +1,6 @@
 import '../styles/globals.css'
-import "../styles/bootstrap2.css"
-// import "../styles/bootstrap.css";
+// import "../styles/bootstrap2.css"
+import "../styles/bootstrap.css";
 import "../styles/custom.css"
 import Layout from '../components/Layout';
 

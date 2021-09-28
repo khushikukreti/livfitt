@@ -1,5 +1,7 @@
 import React from "react";
 import Head from 'next/head'
+// import Image from next
+import Image from "next/image";
 function Footer() {
   return (
       <>
@@ -96,9 +98,9 @@ function Footer() {
     <div className="container">
         <div className="row ">
             <div className="col-md-6">
-                <div className="footer2-box">
-                    <span>PAYMENT</span>
-                    <img src="https://cosmetikaa.com/images/payment.jpg"/>
+                <div className="footer2-box " style={{textAlign:"left"}}>
+                    <span className="payment">PAYMENT</span>
+                    <Image src="https://cosmetikaa.com/images/payment.jpg" layout="fill"/>
                 </div>
             </div>
             <div className="col-md-6">
@@ -115,9 +117,9 @@ function Footer() {
         </div>
     </div>
 </section>
-<section className="footer-img">
+{/* <section className="footer-img">
     <img  className="width" src="https://cosmetikaa.com/images/footer.png" />
-</section>  
+</section>   */}
     </div>
     </>
   );

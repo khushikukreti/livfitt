@@ -147,7 +147,7 @@ function Homepage() {
             <div className="col-md-12">
               <div className="heading-img">
                 <div className="h1">SHOP BY CATEGORY</div>
-                <div className="col-md-12 flex">
+                <div className="col-md-12 ">
                   <div className="row">
                     <div className="col-md-4">
                       <DailyEssential imgURL="https://cosmetikaa.com/manager/images/category-banner-images/01072021124046_category.jpg"></DailyEssential>
@@ -330,7 +330,7 @@ function Homepage() {
                   <path
                     fill="none"
                     stroke="#000000"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     d="M0.364,0.375 8.715,8.726 16.716,0.726 24.716,8.726 32.439,1.005 40.16,8.726 48.161,0.726 55.998,8.563 "
                   ></path>
                 </svg>
@@ -358,11 +358,11 @@ function Homepage() {
       <div className="col-md-12 ">
         <div className="center">
           <Slider {...settings2}>
-            <Brands imgURL="https://cosmetikaa.com/manager/images/brand-images/logo/050820125820_brand_logo.png"></Brands>
-            <Brands imgURL="https://cosmetikaa.com/manager/images/brand-images/logo/050820125820_brand_logo.png"></Brands>
-            <Brands imgURL="https://cosmetikaa.com/manager/images/brand-images/logo/050820125820_brand_logo.png"></Brands>
-            <Brands imgURL="https://cosmetikaa.com/manager/images/brand-images/logo/050820125820_brand_logo.png"></Brands>
-            <Brands imgURL="https://cosmetikaa.com/manager/images/brand-images/logo/050820125820_brand_logo.png"></Brands>
+          <Brands imgURL="/labrand.png"></Brands>
+            <Brands imgURL="/one.png"></Brands>
+            <Brands imgURL="/BM.png"></Brands>
+            <Brands imgURL="/dym.png"></Brands>
+            <Brands imgURL="/myprotien.png"></Brands>
           </Slider>
         </div>
       </div>
