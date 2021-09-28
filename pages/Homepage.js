@@ -354,7 +354,7 @@ function Homepage() {
         </div>
       </section>
 
-      <Products pnmae="OUR BRANDS"> </Products>
+      <Products pname="OUR BRANDS"> </Products>
       <div className="col-md-12 ">
         <div className="center">
           <Slider {...settings2}>
