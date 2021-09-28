@@ -35,7 +35,7 @@ function Homepage() {
     autoplay: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
   };
   var settings3 = {
@@ -60,9 +60,9 @@ function Homepage() {
     <div>
       
         <Slider {...settings}>
-          <BannerSlide imgURL="https://cosmetikaa.com/manager/images/slide-images/200521103147_desktopslide.jpg"></BannerSlide>
-          <BannerSlide imgURL="https://cosmetikaa.com/manager/images/slide-images/200521103147_desktopslide.jpg"></BannerSlide>
-          <BannerSlide imgURL="https://cosmetikaa.com/manager/images/slide-images/200521103147_desktopslide.jpg"></BannerSlide>
+          <BannerSlide imgURL="/banner.jpg"></BannerSlide>
+          <BannerSlide imgURL="/banner.jpg"></BannerSlide>
+          <BannerSlide imgURL="/banner.jpg"></BannerSlide>
 
         </Slider>
       
@@ -149,23 +149,24 @@ function Homepage() {
                 <div className="h1">SHOP BY CATEGORY</div>
                 <div className="col-md-12 ">
                   <div className="row">
-                    <div className="col-md-4">
-                      <DailyEssential imgURL="https://cosmetikaa.com/manager/images/category-banner-images/01072021124046_category.jpg"></DailyEssential>
+                     <div className="col-md-4">
+                      <DailyEssential imgURL="/protien.jpg"></DailyEssential>
                     </div>
                     <div className="col-md-4">
-                      <DailyEssential imgURL="https://cosmetikaa.com/manager/images/category-banner-images/21042021052546_category.jpg"></DailyEssential>
+                      <DailyEssential imgURL="/preworkout.jpg"></DailyEssential>
                     </div>
                     <div className="col-md-4">
-                      <DailyEssential imgURL="https://cosmetikaa.com/manager/images/category-banner-images/01072021124000_category.jpg"></DailyEssential>
+                      <DailyEssential imgURL="/postworkout.jpg"></DailyEssential>
+                    </div>
+                   
+                    <div className="col-md-4">
+                      <DailyEssential imgURL="/fatburnner.jpg"></DailyEssential>
                     </div>
                     <div className="col-md-4">
-                      <DailyEssential imgURL="https://cosmetikaa.com/manager/images/category-banner-images/21042021052654_category.jpg"></DailyEssential>
+                      <DailyEssential imgURL="/vitamin1.jpg"></DailyEssential>
                     </div>
                     <div className="col-md-4">
-                      <DailyEssential imgURL="https://cosmetikaa.com/manager/images/category-banner-images/01072021124046_category.jpg"></DailyEssential>
-                    </div>
-                    <div className="col-md-4">
-                      <DailyEssential imgURL="https://cosmetikaa.com/manager/images/category-banner-images/21042021052546_category.jpg"></DailyEssential>
+                      <DailyEssential imgURL="/app.jpg"></DailyEssential>
                     </div>
                   </div>
                 </div>
@@ -179,8 +180,9 @@ function Homepage() {
           <div className="row">
             <div className="col-md-12">
               <div className="heading-img">
-                <div className="h1">TOP COLLECTION</div>
-                <div className="col-md-12 ">
+                <div className="h1">TOP COLLECTiON</div>
+                <div className="col-md-12  " style={{marginBottom:"30px"}}>
+                  <div className="padd">
                   <Slider {...settings3}>
                     <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/240521113927_collection.jpg"></DailyEssential>
                     <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/150521093133_collection.jpg"></DailyEssential>
@@ -189,6 +191,7 @@ function Homepage() {
                     <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/23052021055309_collection.jpg"></DailyEssential>
                     <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/150521093133_collection.jpg"></DailyEssential>
                   </Slider>
+                  </div>
                 </div>
               </div>
             </div>
@@ -198,12 +201,14 @@ function Homepage() {
       <Banner imgURL="https://cdn.shopify.com/s/files/1/0291/3743/6771/files/athlete-banner-july-2021A.jpg?v=1632119398"></Banner>
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/050721104136_desktopslide.jpg"></Banner> */}
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/010721123111_desktopslide.jpg"></Banner> */}
-      <Products pname="FEMININE HYGINEE"></Products>
+      <Products pname="FEMiNiNE HYGiNEE"></Products>
+     <div className="container">
+       <div className="row">
       <div className="col-md-12 ">
         <Slider {...settings4}>
           <Feminine
             pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins_1.jpg"
+            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
@@ -213,28 +218,32 @@ function Homepage() {
           />
           <Feminine
             pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins_1.jpg"
+            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
             pname="Whisper Ultra Soft Sanitary Pads for Women, XL 50 Napkins"
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-soft-sanitary-pads-for-women-xl-50-napkins_1.jpg"
+            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
             pprice="398"
           />
           <Feminine
             pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins_1.jpg"
+            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
             pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins_1.jpg"
+            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
             pprice="243"
           />
         </Slider>
       </div>
+      </div>
+      </div>
       <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/230421091035_desktopslide.jpg"></Banner>
       <Products pname="TODAY DEAL"></Products>
+      <div className="container">
+      <div className="row">
       <div className="col-md-12 ">
         <Slider {...settings4}>
           <TodayDeal
@@ -262,6 +271,8 @@ function Homepage() {
             imgURL="https://cosmetikaa.com/manager/images/deal-images/22-May-2021-11-25-36_Deal.jpg"
           />
         </Slider>
+      </div>
+      </div>
       </div>
       <section className="fourth-sec">
         <div className="container">
@@ -305,7 +316,7 @@ function Homepage() {
         </div>
       </section>
 
-      <Products pname="TOP SELLING BRANDS" />
+      <Products pname="TOP SELLiNG BRANDS" />
       <div className="container">
         <div className="row">
           <div className="col-md-12 ">
@@ -316,6 +327,7 @@ function Homepage() {
               <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/080621124431_brand.jpg" />
               <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/040521080515_brand.jpg" />
               <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/020721075935_brand.jpg" />
+              
             </Slider>
           </div>
         </div>
@@ -353,9 +365,9 @@ function Homepage() {
           </div>
         </div>
       </section>
-
+<section className="lastsec">
       <Products pname="OUR BRANDS"> </Products>
-      <div className="container-fluid">
+      <div className="container">
       <div className="row">
       <div className="col-md-12 ">
         <div className="center row">
@@ -365,11 +377,22 @@ function Homepage() {
             <Brands imgURL="/BM.png"></Brands>
             <Brands imgURL="/dym.png"></Brands>
             <Brands imgURL="/myprotien.png"></Brands>
+          <Brands imgURL="/labrand.png"></Brands>
+          <Brands imgURL="/dym.png"></Brands>
+          <Brands imgURL="/labrand.png"></Brands>
+            <Brands imgURL="/one.png"></Brands>
+            <Brands imgURL="/BM.png"></Brands>
+            <Brands imgURL="/dym.png"></Brands>
+            <Brands imgURL="/myprotien.png"></Brands>
+          <Brands imgURL="/labrand.png"></Brands>
+          <Brands imgURL="/dym.png"></Brands>
+
           </Slider>
         </div>
       </div>
       </div>
       </div>
+      </section>
     </div>
   );
 }

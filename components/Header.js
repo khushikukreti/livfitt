@@ -10,7 +10,7 @@ function Header() {
             <div className="col-md-2 col-xs-4">
               <div className="pre-header3b">
                 <a>
-                  <Image src="https://cosmetikaa.com/images/logo.png" layout="fill" alt="" />
+                  <Image src="/logo3.png" layout="fill" alt="" />
                 </a>
               </div>
             </div>

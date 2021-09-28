@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'alien-league';
+  src: url('../fonts/alienleague.woff') format('woff');      
+}
+.lastsec{
+  background: #FFF;
+  color: black;
+
+}
+.padd{}
+.padd .item{
+  padding: 30px;
+}
+.h1{
+  font-family: 'alien-league';
+  font-size: 52px !important;
+}
 input,
 input:before,
 input:after {
@@ -69,8 +86,8 @@ input:after {
 }
 body {
   font-family: "Poppins", sans-serif;
-  color: #36474e;
-  background-color: #f3f3f3;
+  color: white;
+  background-color: #050606;
 }
 div {
 }
@@ -197,7 +214,7 @@ a:hover {
   bottom: 0;
   left: 10px;
   right: 10px;
-  background: #fff;
+  /* background: #fff; */
 }
 .subscribe_btn {
   display: inline-block;
@@ -281,7 +298,7 @@ a:hover {
 }
 
 .confetti-button {
-   width: 50%;
+   width: 70%;
   display: inline-block;
   font-size: 1em;
   -webkit-appearance: none;
@@ -477,12 +494,12 @@ a:hover {
 }
 
 .pre-header3 {
-  border-bottom: 1px solid #e9eced;
+  border-bottom: 1px solid #e9eced73;
   padding: 10px 0;
 }
 .pre-header3a {
   position: relative;
-  background: #fff;
+  /* background: #fff; */
   position: relative;
 }
 #suggesstion-box {
@@ -549,7 +566,7 @@ a:hover {
   width: 100%;
   padding: 12px;
   padding-right: 25px;
-  background: transparent;
+  background: #FFF;
   border: 1px solid #36474e;
   border-radius: 5px;
 }
@@ -646,7 +663,7 @@ a:hover {
   top: 2px;
   right: -4px;
   color: #fff;
-  background-color: #a3247b;
+  background-color: #1d8c96;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -721,7 +738,7 @@ a:hover {
 }
 
 .pre-header4 {
-  background-color: #fff;
+  background-color: #050606;
 }
 .pre-header4a {
 }
@@ -757,7 +774,7 @@ a:hover {
 }
 .pre-header4b > ul > li > a > span {
   display: inline;
-  color: rgba(3, 2, 26, 0.8);
+  color: white;
   font-size: 13px;
 }
 
@@ -929,21 +946,27 @@ a:hover {
   font-weight: 600;
   color: #36474e;
 }
-.fourth-seca p {
+.fourth-seca p {    color: #36474e;
 }
 
 .fifth-sec {
   background: url("../public/banner\ \(1\).jpg");
-  background-size: cover;
-  background-position: center;
+ 
+  background-size: 87%;
+  background-position: center bottom;
   margin-top: 50px;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+
 }
 .fifth-seca {
   padding: 90px 0px;
+  color: #36474e;
 }
 .fifth-secb {
 }
 .fifth-seca svg {
+  height: 10px;
 }
 .fifth-seca h2 {
 }
@@ -1044,12 +1067,14 @@ a:hover {
 }
 .daily-essential1aa {
   position: relative;
-  box-shadow: 0px 1px 11px 0px #00000061;
+  box-shadow: 0px -5px 38px 8px rgb(56 118 131 / 28%), 1px 0px 5px 1px rgb(50 108 121 / 43%);
+  margin-bottom: 20px !important;
+  /* box-shadow: 0px 1px 11px 0px #00000061; */
   margin: 10px;
   border-radius: 5px;
   overflow: hidden;
-  background: #fff;
-  height: 370px;
+  /* background: #fff; */
+  height: 359px;
 }
 .daily-essential1aa > a > div>div {
   position: relative !important;
@@ -2390,7 +2415,7 @@ table.cart tbody tr td {
 }
 .cart-checkout-coupon-code-box button {
   width: 100px;
-  background-color: #a3247b;
+  background-color: #16ABB4;
   color: #fff;
   border: none;
 }
@@ -2408,7 +2433,7 @@ table.cart tbody tr td {
 }
 .profile-active a {
   text-decoration: none;
-  background: #a3247b !important;
+  background: #16ABB4!important;
   color: #fff !important;
 }
 
@@ -3830,8 +3855,11 @@ td {
   /* margin-top: 50px; */
 }
 .brands-for-youa {
+  /* box-shadow: 0px -5px 38px 8px rgb(56 118 131 / 28%), 1px 0px 5px 1px rgb(50 108 121 / 43%); */
+  box-shadow: 0px -5px 38px 8px rgb(56 118 131 / 28%), 1px 0px 5px 1px rgb(50 108 121 / 43%);
+
   position: relative;
-  box-shadow: 0px 1px 11px 0px #00000061;
+  /* box-shadow: 0px 1px 11px 0px #00000061; */
   max-height: 310px;
   overflow: hidden;
   margin: 10px;

@@ -5,7 +5,7 @@ function TodayDeal({imgURL,pname}) {
     <>
     <div className="col-md-12">
     <div className="item">
-        <div className=" daily-essential1aa">
+        <div className=" daily-essential1aa" style={{height:"311px"}}>
           <a>
             <div className="">
               <Image
