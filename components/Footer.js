@@ -9,7 +9,7 @@ function Footer() {
     <div>
       <section className="footer1">
         <div className="container">
-          <div className="row justify">
+          <div className="row ">
             <div className="col-md-2">
               <div className="footer1-box">
                 <h3>COSMETIKAA</h3>
@@ -62,7 +62,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-4" style={{columnCount : 2}}>
               <div className="footer1-box">
                 <h3>TOP CATEGORIES</h3>
                 <ul>

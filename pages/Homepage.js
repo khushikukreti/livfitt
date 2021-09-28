@@ -356,7 +356,7 @@ function Homepage() {
 
       <Products pname="OUR BRANDS"> </Products>
       <div className="col-md-12 ">
-        <div className="center">
+        <div className="center row">
           <Slider {...settings2}>
           <Brands imgURL="/labrand.png"></Brands>
             <Brands imgURL="/one.png"></Brands>
