@@ -355,6 +355,8 @@ function Homepage() {
       </section>
 
       <Products pname="OUR BRANDS"> </Products>
+      <div className="container-fluid">
+      <div className="row">
       <div className="col-md-12 ">
         <div className="center row">
           <Slider {...settings2}>
@@ -365,6 +367,8 @@ function Homepage() {
             <Brands imgURL="/myprotien.png"></Brands>
           </Slider>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   );
