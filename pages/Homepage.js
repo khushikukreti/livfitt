@@ -53,7 +53,7 @@ function Homepage() {
     autoplay: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
   };
   return (

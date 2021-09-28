@@ -1049,8 +1049,7 @@ a:hover {
   border-radius: 5px;
   overflow: hidden;
   background: #fff;
-  min-height: 263px;
-  max-height: 263px;
+  height: 370px;
 }
 .daily-essential1aa > a > div>div {
   position: relative !important;
