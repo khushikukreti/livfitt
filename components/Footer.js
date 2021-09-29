@@ -106,6 +106,12 @@ function Footer() {
                     <Image src="https://cosmetikaa.com/images/payment.jpg" layout="fill"/>
                 </div>
             </div>
+            {/* <div className="col-md-3">
+                <div className="footer2-box " style={{textAlign:"left"}}>
+                    <span className="payment">PAYMENT</span>
+                    <Image src="https://cosmetikaa.com/images/payment.jpg" layout="fill"/>
+                </div>
+            </div> */}
             <div className="col-md-6">
                 <div className="footer2-box">
                     <span>CONNECT</span>
