@@ -248,7 +248,7 @@ function Homepage() {
       <div className="col-md-12 ">
         <Slider {...settings4}>
           <TodayDeal
-            pname="Produc detail"
+            pname="Product detail"
             imgURL="/image.jpg"
           />
           <TodayDeal
