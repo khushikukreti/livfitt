@@ -199,7 +199,7 @@ function Homepage() {
           </div>
         </div>
       </section>
-      <Banner imgURL="/bannerPage.jpg"></Banner>
+      <Banner imgURL="/bannerPage"></Banner>
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/050721104136_desktopslide.jpg"></Banner> */}
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/010721123111_desktopslide.jpg"></Banner> */}
       <Products pname="TRENDiNG"></Products>
@@ -249,27 +249,27 @@ function Homepage() {
         <Slider {...settings4}>
           <TodayDeal
             pname="Produc detail"
-            imgURL="/preworkout.jpg"
+            imgURL="/image.jpg"
           />
           <TodayDeal
             pname="Product detail "
-            imgURL="/preworkout.jpg"
+            imgURL="/image.jpg"
           />
           <TodayDeal
             pname="Product detail"
-            imgURL="/preworkout.jpg"
+            imgURL="/image.jpg"
           />
           <TodayDeal
             pname="Product detail"
-            imgURL="/preworkout.jpg"
+            imgURL="/image.jpg"
           />
           <TodayDeal
             pname="Product detail"
-            imgURL="/preworkout.jpg"
+            imgURL="/image.jpg"
           />
           <TodayDeal
             pname="Product detail "
-            imgURL="/preworkout.jpg"
+            imgURL="/image.jpg"
           />
         </Slider>
       </div>
