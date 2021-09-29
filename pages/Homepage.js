@@ -199,7 +199,7 @@ function Homepage() {
           </div>
         </div>
       </section>
-      <Banner imgURL="https://cdn.shopify.com/s/files/1/0291/3743/6771/files/athlete-banner-july-2021A.jpg?v=1632119398"></Banner>
+      <Banner imgURL="/bannerPage.jpg"></Banner>
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/050721104136_desktopslide.jpg"></Banner> */}
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/010721123111_desktopslide.jpg"></Banner> */}
       <Products pname="TRENDiNG"></Products>
@@ -351,7 +351,7 @@ function Homepage() {
                   Visitors can easily <br />
                   subscribe.
                 </h2>
-                <p>We really want you to want US!!</p>
+                {/* <p>We really want you to want US!!</p> */}
                 <div className="fifth-secb">
                   <input
                     type="email"

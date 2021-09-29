@@ -534,6 +534,7 @@ color: white;
 .pre-header3 {
   border-bottom: 1px solid #e9eced73;
   padding: 10px 0;
+  background: #000;
 }
 .pre-header3a {
   position: relative;
@@ -634,6 +635,7 @@ color: white;
   display: inline-block;
   vertical-align: top;
   margin-top: 10px;
+  color: white;
 }
 .pre-header3b {
   text-align: center;
@@ -678,7 +680,8 @@ color: white;
   position: relative !important;
   width: 35px !important;
   height: auto !important;
-  min-width: inherit !important;filter: drop-shadow(0 0px 0 #166170);
+  min-width: inherit !important;
+  /* filter: drop-shadow(0 0px 0 #166170); */
 }
 .pre-header3c ul li a > img ~ p {
   margin: 0;
@@ -1245,10 +1248,11 @@ color: white;
   padding: 20px 0;
   border-top: 1px solid #e8e8e8;
 }
-.footer1-box {
+.footer1-box >h3 {
+  color: white;
 }
 .footer1-box > h3 {
-  color: #6c7a82;
+  color: white;
   font-size: 14px;
   font-weight: bold;
 }

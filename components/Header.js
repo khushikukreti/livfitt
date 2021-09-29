@@ -20,10 +20,10 @@ function Header() {
                 <form action="">
                   <input type="text" placeholder="what are you looking for?" />
                   <button  className="buttonn" type="submit">
-                    <Image
-                      src="https://cosmetikaa.com/images/search.png"
+                    {/* <Image
+                      src=""
                      layout="fill"
-                    />
+                    /> */}
                   </button>
                 </form>
               </div>
@@ -33,9 +33,17 @@ function Header() {
                 <ul>
                   <li className="open-searchbar hidden-md hidden-lg">
                     <a>
-                      {" "}
+          
+                      {/* <Image
+                        src=""
+                        layout="fill"
+                      /> */}
+                    </a>
+                  </li>
+                  <li>
+                    <a>
                       <Image
-                        src="https://cosmetikaa.com/images/search.png"
+                        src="/like1.png"
                         layout="fill"
                       />
                     </a>
@@ -43,15 +51,7 @@ function Header() {
                   <li>
                     <a>
                       <Image
-                        src="https://cosmetikaa.com/images/like.png"
-                        layout="fill"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a>
-                      <Image
-                        src="https://cosmetikaa.com/images/cart.png"
+                        src="/cart1.png"
                         layout="fill"
                       />
                       <span className="bag-label">0</span>
@@ -60,7 +60,7 @@ function Header() {
                   <li>
                     <a>
                       <Image
-                        src="https://cosmetikaa.com/images/user.png"
+                        src="/user1.png"
                         layout="fill"
                       />{" "}
                       <p className="account">Account</p>
