@@ -22,7 +22,7 @@ import TopCollection from "./TopCollection";
 //   };
 function Homepage() {
   var settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     autoplay: true,
     infinite: true,
@@ -40,7 +40,7 @@ function Homepage() {
     slidesToScroll: 1,
   };
   var settings3 = {
-    dots: true,
+    dots: false,
     arrows: false,
     autoplay: true,
     infinite: true,
@@ -49,7 +49,7 @@ function Homepage() {
     slidesToScroll: 1,
   };
   var settings4 = {
-    dots: true,
+    dots: false,
     arrows: false,
     autoplay: true,
     infinite: true,
@@ -181,7 +181,7 @@ function Homepage() {
           <div className="row">
             <div className="col-md-12">
               <div className="heading-img">
-                <div className="h1">TOP COLLECTiON</div>
+                <div className="h1">TOP SELLiNG </div>
                 <div className="col-md-12  " style={{marginBottom:"30px"}}>
                   <div className="padd">
                   <Slider {...settings3}>
@@ -202,73 +202,73 @@ function Homepage() {
       <Banner imgURL="https://cdn.shopify.com/s/files/1/0291/3743/6771/files/athlete-banner-july-2021A.jpg?v=1632119398"></Banner>
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/050721104136_desktopslide.jpg"></Banner> */}
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/010721123111_desktopslide.jpg"></Banner> */}
-      <Products pname="FEMiNiNE HYGiNEE"></Products>
+      <Products pname="TRENDiNG"></Products>
      <div className="container">
        <div className="row">
       <div className="col-md-12 ">
         <Slider {...settings4}>
           <Feminine
-            pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
+            pname="product detail"
+            imgURL="/product1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
-            pname="Whisper Ultra Clean Sanitary Pads for Women, XL+ 50 Napkin..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
+            pname="product detail"
+            imgURL="/product1.jpg"
             pprice="499"
           />
           <Feminine
-            pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
+            pname="product detail"
+            imgURL="/product1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
-            pname="Whisper Ultra Soft Sanitary Pads for Women, XL 50 Napkins"
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
+            pname="product detail"
+            imgURL="/product1.jpg"
             pprice="398"
           />
           <Feminine
-            pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
+            pname="product detail"
+            imgURL="/product1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
-            pname="Whisper Ultra Night Sanitary Pads for Women, XXXL 10 Napki..."
-            imgURL="https://cosmetikaa.com/manager/images/product-images/front/whisper-ultra-clean-sanitary-pads-for-women-xl-50-napkins_1.jpg"
+            pname="product detail"
+            imgURL="/product1.jpg"
             pprice="243"
           />
         </Slider>
       </div>
       </div>
       </div>
-      <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/230421091035_desktopslide.jpg"></Banner>
-      <Products pname="TODAY DEAL"></Products>
+      {/* <Banner style={{background:"transparent"}} imgURL="https://cosmetikaa.com/manager/images/slide-images/230421091035_desktopslide.jpg"></Banner> */}
+      <Products pname="TOP COLLECTION"></Products>
       <div className="container">
       <div className="row">
       <div className="col-md-12 ">
         <Slider {...settings4}>
           <TodayDeal
-            pname="Extra 10% off L'Oréal Top"
+            pname="Produc detail"
             imgURL="/preworkout.jpg"
           />
           <TodayDeal
-            pname="15 % Off Wella Professional "
+            pname="Product detail "
             imgURL="/preworkout.jpg"
           />
           <TodayDeal
-            pname="UPTO 35% OFF Herbalife Product"
+            pname="Product detail"
             imgURL="/preworkout.jpg"
           />
           <TodayDeal
-            pname="Extra 20% off Schwarzkopf Professional"
+            pname="Product detail"
             imgURL="/preworkout.jpg"
           />
           <TodayDeal
-            pname="Extra 10% off L'Oréal Professionnel"
+            pname="Product detail"
             imgURL="/preworkout.jpg"
           />
           <TodayDeal
-            pname="15 % Off Wella Professional "
+            pname="Product detail "
             imgURL="/preworkout.jpg"
           />
         </Slider>
@@ -317,17 +317,17 @@ function Homepage() {
         </div>
       </section>
 
-      <Products pname="TOP SELLiNG BRANDS" />
+      <Products pname="RECENTLY LAUNCHED" />
       <div className="container">
         <div className="row">
           <div className="col-md-12 ">
             <Slider {...settings4}>
-              <TopBrands imgURL="/preworkout.jpg" />
-              <TopBrands imgURL="/preworkout.jpg" />
-              <TopBrands imgURL="/preworkout.jpg" />
-              <TopBrands imgURL="/preworkout.jpg" />
-              <TopBrands imgURL="/preworkout.jpg" />
-              <TopBrands imgURL="/preworkout.jpg" />
+              <TopBrands imgURL="/product1.jpg" />
+              <TopBrands imgURL="/product1.jpg" />
+              <TopBrands imgURL="/product1.jpg" />
+              <TopBrands imgURL="/product1.jpg" />
+              <TopBrands imgURL="/product1.jpg" />
+              <TopBrands imgURL="/product1.jpg" />
               
             </Slider>
           </div>

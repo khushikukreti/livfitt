@@ -89,37 +89,37 @@ function Header() {
                     <a>
                       {/* <Image src="" layout="fill"/> */}
                       <span>
-                        Hair Care &amp; Styling{" "}
+                        Protein
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
                     </a>
                     <ul>
                       <li>
-                        <a>Hair Oil</a>
+                        <a>Whey Protein</a>
                       </li>
                       <li>
-                        <a>Hair Shampoo</a>
+                        <a>Isolate</a>
                       </li>
                       <li>
-                        <a>Hair Care Combo</a>
+                        <a>Weight Gainers</a>
                       </li>
                       <li>
-                        <a>Hair Conditioner</a>
+                        <a>Caseim</a>
                       </li>
                       <li>
-                        <a>Hair Serum</a>
+                        <a>Meal Replacement</a>
                       </li>
                       <li>
-                        <a>Hair Masks &amp; Creams</a>
+                        <a>Proteein Bars</a>
                       </li>
                       <li>
-                        <a>Hair Mousse</a>
+                        <a>Protein for Women</a>
                       </li>
                       <li>
-                        <a>Hair Spray</a>
+                        <a>BCAA</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a>Hair Gels &amp; Waxes</a>
                       </li>
                       <li>
@@ -133,32 +133,32 @@ function Header() {
                       </li>
                       <li>
                         <a>Hair Wax </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
                   <li>
                     <a>
                       {/* <Image src="" layout="fill"/> */}
                       <span>
-                        Bath &amp; Body Care{" "}
+                       Brands
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
                     </a>
                     <ul>
                       <li>
-                        <a>Face Care Combo</a>
+                        <a>Dynatize</a>
                       </li>
                       <li>
-                        <a>Lip Care</a>
+                        <a>Labrada</a>
                       </li>
                       <li>
-                        <a>Face Wash</a>
+                        <a>One Science</a>
                       </li>
                       <li>
-                        <a>Face Oil</a>
+                        <a>My Protein</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a>Shower Gel</a>
                       </li>
                       <li>
@@ -205,29 +205,29 @@ function Header() {
                       </li>
                       <li>
                         <a>Day cream</a>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
                   <li>
                     <a>
                       {/* <Image src="" layout="fill"/> */}
                       <span>
-                        Makeup{" "}
+                        Goal{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
                     </a>
                     <ul>
                       <li>
-                        <a>Face</a>
+                        <a>Bulk Gain</a>
                       </li>
                       <li>
-                        <a>Nails</a>
+                        <a>Weight Loss</a>
                       </li>
                       <li>
-                        <a>Makeup Kit Combo </a>
+                        <a>Fitness </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a>Makeup Kit </a>
                       </li>
                       <li>
@@ -244,19 +244,19 @@ function Header() {
                       </li>
                       <li>
                         <a>Concealer</a>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
                   <li>
                     <a>
                       {/* <Image src="" layout="fill"/> */}
                       <span>
-                        Fragnances{" "}
+                        Accessories{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
                     </a>
-                    <ul>
+                    {/* <ul>
                       <li>
                         <a>Deodorants</a>
                       </li>
@@ -269,27 +269,27 @@ function Header() {
                       <li>
                         <a>Talcum Powder</a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <a>
                       <span>
-                        Feminine Hygiene{" "}
+                        Equipments{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
                     </a>
-                    <ul>
+                    {/* <ul>
                       <li>
                         <a>Sanitary Napkins</a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <a>
                       {/* <Image src="" layout="fill"/> */}
                       <span>
-                        Skin Care{" "}
+                        Deals{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
@@ -299,27 +299,27 @@ function Header() {
                     <a>
                       {/* <Image src=""/> */}
                       <span>
-                        Health &amp; Wellness{" "}
+                        Online Training{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
                     </a>
                     <ul>
                       <li>
-                        <a>Protein</a>
+                        <a>Yoga</a>
                       </li>
                       <li>
-                        <a>Wellness Shake </a>
+                        <a>Weight Training </a>
                       </li>
                       <li>
-                        <a>Energy Drink </a>
+                        <a>HIIT</a>
                       </li>
                       <li>
-                        <a>Vitamin Supplements</a>
+                        <a>Dance Fitness</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a>FMCG Combo</a>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
                 </ul>

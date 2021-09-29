@@ -12,7 +12,7 @@ function Footer() {
           <div className="row ">
             <div className="col-md-2">
               <div className="footer1-box">
-                <h3>COSMETIKAA</h3>
+                <h3>LIVFITT</h3>
                 <ul>
                   <li>
                     <a>Home</a>
@@ -25,7 +25,7 @@ function Footer() {
             </div>
             <div className="col-md-2">
               <div className="footer1-box">
-                <h3>COSMETIKAA USERS</h3>
+                <h3>BRANDS</h3>
                 <ul>
                   <li>
                     <a>My Cart</a>
@@ -67,26 +67,26 @@ function Footer() {
                 <h3>TOP CATEGORIES</h3>
                 <ul>
                   <li>
-                    <a>Hair Care &amp; Styling </a>
+                    <a>Protein   </a>
                   </li>
                   <li>
-                    <a>Bath &amp; Body Care </a>
+                    <a>Pre-workout </a>
                   </li>
                   <li>
-                    <a>Makeup </a>
+                    <a>Post-workout </a>
                   </li>
 
                   <li>
-                    <a>Fragnances </a>
+                    <a>Fat burners </a>
                   </li>
                   <li>
-                    <a>Feminine Hygiene </a>
+                    <a>Vitamins </a>
                   </li>
                   <li>
-                    <a>Skin Care </a>
+                    <a>Apparel and Accessories </a>
                   </li>
                   <li>
-                    <a>Health &amp; Wellness </a>
+                    <a>Equipments  </a>
                   </li>
                 </ul>
               </div>

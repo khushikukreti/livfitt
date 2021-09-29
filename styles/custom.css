@@ -242,7 +242,10 @@ a:hover {
 }
 
 .daily-text {
-  font-size: 12px;
+  margin-top: 8px;
+  /* margin-top: 8px; */
+  font-size: 19px;
+color: white;
   text-align: center;
   padding: 7px 0px;
   /* position: absolute; */
@@ -869,6 +872,7 @@ a:hover {
 }
 
 .home-second-banner {
+  background:#FFF;
 }
 .home-second-banner1 > a > div {
   position: relative !important;
