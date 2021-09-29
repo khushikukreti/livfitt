@@ -208,32 +208,32 @@ function Homepage() {
       <div className="col-md-12 ">
         <Slider {...settings4}>
           <Feminine
-            pname="product detail in two lines"
+            pname="product detail intwo lines"
             imgURL="/product1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
-            pname="product detail in two lines"
+            pname="product detail intwo lines"
             imgURL="/product1.jpg"
             pprice="499"
           />
           <Feminine
-            pname="product detail in two lines"
+            pname="product detail intwo lines"
             imgURL="/product1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
-            pname="product detail in two lines"
+            pname="product detail intwo lines"
             imgURL="/product1.jpg"
             pprice="398"
           />
           <Feminine
-            pname="product detail in two lines"
+            pname="product detail intwo lines"
             imgURL="/product1.jpg"
             pprice="243"
           ></Feminine>
           <Feminine
-            pname="product detail in two lines"
+            pname="product detail intwo lines"
             imgURL="/product1.jpg"
             pprice="243"
           />
@@ -254,7 +254,7 @@ function Homepage() {
           <TodayDeal
             pname="Product detail "
             imgURL="/image.jpg"
-          /> in two lines
+          />
           <TodayDeal
             pname="Product detail"
             imgURL="/image.jpg"
