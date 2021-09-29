@@ -20,10 +20,10 @@ function Header() {
                 <form action="">
                   <input type="text" placeholder="what are you looking for?" />
                   <button  className="buttonn" type="submit">
-                    {/* <Image
-                      src=""
+                    <Image
+                      src="https://cosmetikaa.com/images/search.png"
                      layout="fill"
-                    /> */}
+                    />
                   </button>
                 </form>
               </div>
@@ -34,10 +34,10 @@ function Header() {
                   <li className="open-searchbar hidden-md hidden-lg">
                     <a>
           
-                      {/* <Image
-                        src=""
+                      <Image
+                        src="https://cosmetikaa.com/images/search.png"
                         layout="fill"
-                      /> */}
+                      />
                     </a>
                   </li>
                   <li>

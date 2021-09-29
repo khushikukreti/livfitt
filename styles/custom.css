@@ -1300,6 +1300,9 @@ color: white;
   color: #6c7a82;
   font-size: 14px;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top
 }
 .footer2-box img {
   margin-left: 50px;

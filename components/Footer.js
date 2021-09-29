@@ -1,5 +1,8 @@
 import React from "react";
 import Head from 'next/head'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 // import Image from next
 import Image from "next/image";
 function Footer() {
@@ -107,9 +110,10 @@ function Footer() {
                 <div className="footer2-box">
                     <span>CONNECT</span>
                     <ul>
-                        <li><a h><i className="fa fa-facebook-f"></i></a></li>
+                        <li><a><  InstagramIcon style={{fontSize:"27px"}}/></a></li>
+                        <li><a>< FacebookIcon style={{fontSize:"27px"}}/></a></li>
                       
-                        <li><a ><i className="fa fa-instagram"></i></a></li>
+                        <li><a ><  LinkedInIcon style={{fontSize:"27px"}}/></a></li>
                      
                     </ul>
                 </div>
