@@ -1604,6 +1604,7 @@ color: white;
 }
 .listing-product-box-txt {
   text-align: center;
+  color: #000;
 }
 .listing-product-box-txt p {
 }
@@ -1637,6 +1638,7 @@ color: white;
 .listing-product-box-price i {
 }
 .listing-product-box-rating {
+  color: #000;
   text-align: center;
 }
 .listing-product-box-rating span {
@@ -1649,8 +1651,8 @@ color: white;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: all 0.2s;
 }
 .listing-product-box-wishlist-btn {
@@ -1666,7 +1668,7 @@ color: white;
 }
 
 .listing-product-box-addtocart-btn {
-  width: calc(100% - 71px);
+  width: calc(100% - 67px);
   display: inline-block;
   text-align: center;
   background-color: #16ABB4;
