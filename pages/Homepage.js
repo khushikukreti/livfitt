@@ -199,7 +199,7 @@ function Homepage() {
           </div>
         </div>
       </section>
-      <Banner imgURL="/bannerPage"></Banner>
+      <Banner imgURL="/bannerPage.jpg"></Banner>
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/050721104136_desktopslide.jpg"></Banner> */}
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/010721123111_desktopslide.jpg"></Banner> */}
       <Products pname="TRENDiNG"></Products>
@@ -242,7 +242,7 @@ function Homepage() {
       </div>
       </div>
       {/* <Banner style={{background:"transparent"}} imgURL="https://cosmetikaa.com/manager/images/slide-images/230421091035_desktopslide.jpg"></Banner> */}
-      <Products pname="TOP COLLECTION"></Products>
+      <Products pname="TOP COLLECTiON"></Products>
       <div className="container">
       <div className="row">
       <div className="col-md-12 ">
