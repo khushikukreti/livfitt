@@ -28,10 +28,10 @@ function Footer() {
                 <h3>BRANDS</h3>
                 <ul>
                   <li>
-                    <a>My Cart</a>
+                    <a>Brand1</a>
                   </li>
                   <li>
-                    <a>My Wishlist</a>
+                    <a>Brand2</a>
                   </li>
                 </ul>
               </div>
@@ -62,10 +62,10 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-md-4" style={{columnCount : 2}}>
+            <div className="col-md-4" >
               <div className="footer1-box">
                 <h3>TOP CATEGORIES</h3>
-                <ul>
+                <ul style={{columnCount : 2}}>
                   <li>
                     <a>Protein   </a>
                   </li>
