@@ -5,6 +5,7 @@ function TopBrands({ imgURL }) {
     <>
       
       <div className="col-md-12 col-xs-6" >
+        <div className="padd3">
         <div className="brands-for-youa">
           <a >
             <Image
@@ -12,6 +13,7 @@ function TopBrands({ imgURL }) {
               layout="fill"
             />
           </a>
+        </div>
         </div>
       </div>
     </>

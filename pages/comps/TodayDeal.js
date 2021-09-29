@@ -4,8 +4,9 @@ function TodayDeal({imgURL,pname}) {
   return (
     <>
     <div className="col-md-12">
+      <div className="padd2">
     <div className="item">
-        <div className=" daily-essential1aa" style={{height:"311px"}}>
+        <div className=" daily-essential1aa" >
           <a>
             <div className="">
               <Image
@@ -14,11 +15,13 @@ function TodayDeal({imgURL,pname}) {
               />
             </div>
           </a>
-
+<div  className="text-div">
           <p className="daily-text">
             {`${pname}`}
           </p>
+          </div>
         </div>
+      </div>
       </div>
     </div>
       

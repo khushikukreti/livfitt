@@ -11,6 +11,7 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BannerSlide from "./comps/BannerSlide";
+import TopCollection from "./TopCollection";
 // export default function SimpleSlider() {
 //   var settings = {
 //     dots: true,
@@ -30,7 +31,7 @@ function Homepage() {
     slidesToScroll: 1,
   };
   var settings2 = {
-    dots: true,
+    dots: false,
     arrows: false,
     autoplay: true,
     infinite: true,
@@ -175,7 +176,7 @@ function Homepage() {
           </div>
         </div>
       </section>
-      <section className="daily-essential11">
+      <section className="daily-essential11 whitebg">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -184,12 +185,12 @@ function Homepage() {
                 <div className="col-md-12  " style={{marginBottom:"30px"}}>
                   <div className="padd">
                   <Slider {...settings3}>
-                    <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/240521113927_collection.jpg"></DailyEssential>
-                    <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/150521093133_collection.jpg"></DailyEssential>
-                    <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/150521093146_collection.jpg"></DailyEssential>
-                    <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/150521092925_collection.jpg"></DailyEssential>
-                    <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/23052021055309_collection.jpg"></DailyEssential>
-                    <DailyEssential imgURL="https://cosmetikaa.com/manager/images/collection-banner-images/150521093133_collection.jpg"></DailyEssential>
+                    <TopCollection imgURL="/product1.jpg" pname="Gainer Collection"/>
+                    <TopCollection imgURL="/product2.jpg" pname="Gainer Collection"/>
+                    <TopCollection imgURL="/product3.jpg" pname="Gainer Collection"/>
+                    <TopCollection imgURL="/product4.jpg" pname="Gainer Collection"/>
+                    <TopCollection imgURL="/product5.jpg" pname="Gainer Collection"/>
+                    <TopCollection imgURL="/product1.jpg" pname="Gainer Collection"/>
                   </Slider>
                   </div>
                 </div>
@@ -247,28 +248,28 @@ function Homepage() {
       <div className="col-md-12 ">
         <Slider {...settings4}>
           <TodayDeal
-            pname="Extra 10% off L'Oréal Professionnel Serie Exper..."
-            imgURL="https://cosmetikaa.com/manager/images/deal-images/22-May-2021-11-34-48_Deal.jpg"
+            pname="Extra 10% off L'Oréal Top"
+            imgURL="/preworkout.jpg"
           />
           <TodayDeal
             pname="15 % Off Wella Professional "
-            imgURL="https://cosmetikaa.com/manager/images/deal-images/22-May-2021-11-25-36_Deal.jpg"
+            imgURL="/preworkout.jpg"
           />
           <TodayDeal
             pname="UPTO 35% OFF Herbalife Product"
-            imgURL="https://cosmetikaa.com/manager/images/deal-images/22-May-2021-07-57-49_Deal.jpg"
+            imgURL="/preworkout.jpg"
           />
           <TodayDeal
             pname="Extra 20% off Schwarzkopf Professional"
-            imgURL="https://cosmetikaa.com/manager/images/deal-images/22-May-2021-11-32-29_Deal.jpg"
+            imgURL="/preworkout.jpg"
           />
           <TodayDeal
-            pname="Extra 10% off L'Oréal Professionnel Serie Exper..."
-            imgURL="https://cosmetikaa.com/manager/images/deal-images/22-May-2021-11-34-48_Deal.jpg"
+            pname="Extra 10% off L'Oréal Professionnel"
+            imgURL="/preworkout.jpg"
           />
           <TodayDeal
             pname="15 % Off Wella Professional "
-            imgURL="https://cosmetikaa.com/manager/images/deal-images/22-May-2021-11-25-36_Deal.jpg"
+            imgURL="/preworkout.jpg"
           />
         </Slider>
       </div>
@@ -321,12 +322,12 @@ function Homepage() {
         <div className="row">
           <div className="col-md-12 ">
             <Slider {...settings4}>
-              <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/050820125114_brand.jpg" />
-              <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/080621124445_brand.jpg" />
-              <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/040521080445_brand.jpg" />
-              <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/080621124431_brand.jpg" />
-              <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/040521080515_brand.jpg" />
-              <TopBrands imgURL="https://cosmetikaa.com/manager/images/brand-images/020721075935_brand.jpg" />
+              <TopBrands imgURL="/preworkout.jpg" />
+              <TopBrands imgURL="/preworkout.jpg" />
+              <TopBrands imgURL="/preworkout.jpg" />
+              <TopBrands imgURL="/preworkout.jpg" />
+              <TopBrands imgURL="/preworkout.jpg" />
+              <TopBrands imgURL="/preworkout.jpg" />
               
             </Slider>
           </div>

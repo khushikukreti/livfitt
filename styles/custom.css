@@ -5,9 +5,42 @@
 .lastsec{
   background: #FFF;
   color: black;
-
+}
+.whitebg{
+  background: #FFF;
+  color: black;
+}
+.text-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16ABB4;
+  z-index: 9;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  height: 61px;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16ABB4;
+  z-index: 9;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 61px;
 }
 .padd{}
+.padd3{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.padd2 .item{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .padd .item{
   padding: 30px;
 }
@@ -36,6 +69,7 @@ input:after {
 .bannerSlide {
   box-shadow: none !important;
   margin: 0 !important;
+  height: 350px;
 }
 .image {
   position: relative !important;
@@ -88,6 +122,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   background-color: #050606;
+  background-image: url("../public/backgound.png");
 }
 div {
 }
@@ -210,7 +245,7 @@ a:hover {
   font-size: 12px;
   text-align: center;
   padding: 7px 0px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 10px;
   right: 10px;
@@ -640,7 +675,7 @@ a:hover {
   position: relative !important;
   width: 35px !important;
   height: auto !important;
-  min-width: inherit !important;
+  min-width: inherit !important;filter: drop-shadow(0 0px 0 #166170);
 }
 .pre-header3c ul li a > img ~ p {
   margin: 0;
@@ -950,9 +985,9 @@ a:hover {
 }
 
 .fifth-sec {
-  background: url("../public/banner\ \(1\).jpg");
+  background: url("../public/banner\ \(2\).jpg");
  
-  background-size: 87%;
+  /* background-size: 87%; */
   background-position: center bottom;
   margin-top: 50px;
   background-repeat: no-repeat;
@@ -1072,9 +1107,17 @@ a:hover {
   /* box-shadow: 0px 1px 11px 0px #00000061; */
   margin: 10px;
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background: #fff; */
-  height: 359px;
+  /* height: 359px; */
+}
+.daily-essential1aa>a>div{
+  position:  relative !important;
+}
+.daily-essential1aa>a>div>img{
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
 }
 .daily-essential1aa > a > div>div {
   position: relative !important;
@@ -1109,6 +1152,7 @@ a:hover {
 }
 
 .top-brands-1 {
+  position: relative;
   box-shadow: 0px 1px 11px 0px #00000061;
   margin: 10px;
   border-radius: 5px;
@@ -1116,6 +1160,15 @@ a:hover {
   background: #fff;
   min-height: 323px;
   max-height: 323px;
+}
+.top-brands-1>a>div{
+  position: relative !important;
+}
+.top-brands-1>a>div>img{
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  min-width: inherit !important;
 }
 .top-brands-1 img {
   width: 100%;
@@ -1589,7 +1642,7 @@ a:hover {
 }
 .listing-product-box-wishlist-btn a {
   font-size: 25px;
-  color: #a3247b;
+  color: #16ABB4;
 }
 .listing-product-box-wishlist-btn a i {
 }
@@ -1598,7 +1651,7 @@ a:hover {
   width: calc(100% - 71px);
   display: inline-block;
   text-align: center;
-  background-color: #a3247b;
+  background-color: #16ABB4;
   padding: 12px 10px;
 }
 .listing-product-box-addtocart-btn a {
