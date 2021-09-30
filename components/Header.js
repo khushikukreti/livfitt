@@ -249,7 +249,8 @@ function Header() {
                   </li>
                   <li>
                     <a>
-                      {/* <Image src="" layout="fill"/> */}
+
+                      {/* <Image srgghhhc="" layout="fill"/> */}
                       <span>
                         Clothing {" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
