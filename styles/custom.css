@@ -40,7 +40,7 @@
 }
 .item-wrapper{
   position: absolute !important;
-  bottom: 0px;
+  bottom: -20px;
   background: #f5f5f5;
   background: #f5f5f5;
   color: #f1f1f1;
