@@ -142,7 +142,7 @@ function Homepage() {
         </div>
       </section> */}
 
-      <section className="daily-essential11">
+      <section className="daily-essential11" style={{ marginBottom: "25px",}}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -176,7 +176,7 @@ function Homepage() {
           </div>
         </div>
       </section>
-      <section className="daily-essential11 whitebg">
+      <section className="daily-essential11 whitebg" style={{paddingBottom:"9px"}}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -185,12 +185,12 @@ function Homepage() {
                 <div className="col-md-12  " style={{marginBottom:"30px"}}>
                   <div className="padd">
                   <Slider {...settings3}>
-                    <TopCollection imgURL="/product1.jpg" pname="Gainer Collection"/>
-                    <TopCollection imgURL="/product2.jpg" pname="Gainer Collection"/>
-                    <TopCollection imgURL="/product3.jpg" pname="Gainer Collection"/>
-                    <TopCollection imgURL="/product4.jpg" pname="Gainer Collection"/>
-                    <TopCollection imgURL="/product5.jpg" pname="Gainer Collection"/>
-                    <TopCollection imgURL="/product1.jpg" pname="Gainer Collection"/>
+                    <Feminine imgURL="/product1.jpg" pname="Gainer Collection" pprice={489}/>
+                    <Feminine imgURL="/product2.jpg" pname="Gainer Collection" pprice={489}/>
+                    <Feminine imgURL="/product3.jpg" pname="Gainer Collection" pprice={489}/>
+                    <Feminine imgURL="/product4.jpg" pname="Gainer Collection" pprice={489}/>
+                    <Feminine imgURL="/product5.jpg" pname="Gainer Collection" pprice={489}/>
+                    <Feminine imgURL="/product1.jpg" pname="Gainer Collection" pprice={489}/>
                   </Slider>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
       <Banner imgURL="/bannerPage.jpg"></Banner>
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/050721104136_desktopslide.jpg"></Banner> */}
       {/* <Banner imgURL="https://cosmetikaa.com/manager/images/slide-images/010721123111_desktopslide.jpg"></Banner> */}
@@ -247,34 +247,43 @@ function Homepage() {
       <div className="row">
       <div className="col-md-12 ">
         <Slider {...settings4}>
-          <TodayDeal
+          <Feminine
             pname="Product detail"
             imgURL="/image.jpg"
+            pprice={234}
           />
-          <TodayDeal
+          <Feminine
             pname="Product detail "
             imgURL="/image.jpg"
+            pprice={234}
           />
-          <TodayDeal
+          <Feminine
             pname="Product detail"
             imgURL="/image.jpg"
+            pprice={234}
           />
-          <TodayDeal
+          <Feminine
             pname="Product detail"
             imgURL="/image.jpg"
+            pprice={234}
           />
-          <TodayDeal
+          <Feminine
             pname="Product detail"
             imgURL="/image.jpg"
+            pprice={234}
           />
-          <TodayDeal
+          <Feminine
             pname="Product detail "
             imgURL="/image.jpg"
+            pprice={234}
           />
         </Slider>
       </div>
       </div>
       </div>
+      <section className="section">
+        <Banner imgURL="/Banner2.jpg"></Banner>
+      </section>
       <section className="fourth-sec">
         <div className="container">
           <div className="row">
@@ -282,7 +291,7 @@ function Homepage() {
               <ul>
                 <li>
                   <div className="fourth-seca">
-                    <Image src="https://cosmetikaa.com/images/4.png" layout="fill"/>
+                    <Image src="/4.png" layout="fill"/>
                     <h3>100% Secure Payment</h3>
                     <p>All major credit &amp; debit cards accepted.</p>
                   </div>
@@ -290,7 +299,7 @@ function Homepage() {
                 <li>
                   <a href="javascript:void(0);">
                     <div className="fourth-seca">
-                      <Image src="https://cosmetikaa.com/images/5.png" layout="fill" />
+                      <Image src="/5.png" layout="fill" />
                       <h3>GENUINE PRODUCTS</h3>
                       <p>
                         Tell me what you are looking for and i will work my
@@ -302,7 +311,7 @@ function Homepage() {
                 <li>
                   <a href="javascript:void(0);">
                     <div className="fourth-seca">
-                      <Image src="https://cosmetikaa.com/images/6.png" layout="fill"/>
+                      <Image src="/6.png" layout="fill"/>
                       <h3>PAN INDIA DELIVERY</h3>
                       <p>
                         Got a question? Look no further. Browse FAQs or submit
@@ -322,12 +331,12 @@ function Homepage() {
         <div className="row">
           <div className="col-md-12 ">
             <Slider {...settings4}>
-              <TopBrands imgURL="/product1.jpg" />
-              <TopBrands imgURL="/product1.jpg" />
-              <TopBrands imgURL="/product1.jpg" />
-              <TopBrands imgURL="/product1.jpg" />
-              <TopBrands imgURL="/product1.jpg" />
-              <TopBrands imgURL="/product1.jpg" />
+              <Feminine imgURL="/product1.jpg" pname="Product Change " ppricee={435}/>
+              <Feminine imgURL="/product1.jpg" pname="Product Change " ppricee={435}/>
+              <Feminine imgURL="/product1.jpg" pname="Product Change " ppricee={435}/>
+              <Feminine imgURL="/product1.jpg" pname="Product Change " ppricee={435}/>
+              <Feminine imgURL="/product1.jpg" pname="Product Change " ppricee={435}/>
+              <Feminine imgURL="/product1.jpg" pname="Product Change " ppricee={435}/>
               
             </Slider>
           </div>

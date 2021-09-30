@@ -2,6 +2,77 @@
   font-family: 'alien-league';
   src: url('../fonts/alienleague.woff') format('woff');      
 }
+.section{
+  padding-top:50px;
+  background: #FFF;
+}
+.addBag:hover .bag{
+  animation-name: bounce; 
+  animation-duration: 1s; 
+  animation-fill-mode: both;
+  color: #000;
+}
+.addWhislist:hover .bag2{
+  animation-name: bounce; 
+  animation-duration: 1s; 
+  animation-fill-mode: both;
+  color: #000;
+}
+@keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-15px);} 
+  60% {transform: translateY(-5px);} 
+}
+.brands-for-youa:hover .item-wrapper{
+  bottom: 60px;
+  transition: bottom 300ms;
+  opacity: 1;
+}
+.daily-essential1aa:hover .item-wrapper{
+  bottom: 60px;
+  transition: bottom 300ms;
+  opacity: 1;
+}
+.listing-product-box:hover .item-wrapper{
+  bottom: 0;
+  transition: bottom 300ms;
+  opacity: 1;
+}
+.item-wrapper{
+  position: absolute !important;
+  bottom: 0px;
+  background: #f5f5f5;
+  background: #f5f5f5;
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.addBag{
+  background: #16ABB4;
+  display: inline-flex;
+  width: 49%;
+  text-align: center;
+  padding: 12px 20px;
+  align-items: center;
+  justify-content: center;
+}
+.addWhislist{
+  display: inline-flex;
+  width: 49%;
+  text-align: center;
+  padding: 12px 20px;
+  align-items: center;
+  justify-content: center;
+}
+.priceCut{
+  text-decoration: line-through;
+  color: gray;
+  padding-left: 8px;
+}
 .online{
   border: 1px solid #16ABB4;
   margin-top: 8px !important;
@@ -952,8 +1023,9 @@ color: white;
 }
 
 .fourth-sec {
-  border-top: 1px solid #e9eced;
-  margin-top: 50px;
+  /* border-top: 1px solid #e9eced; */
+  padding-top: 50px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #e9eced;
   background: #fff;
 }
@@ -1121,6 +1193,7 @@ color: white;
   /* box-shadow: 0px 1px 11px 0px #00000061; */
   margin: 10px;
   border-radius: 5px;
+  max-height: 399px;
   /* overflow: hidden; */
   /* background: #fff; */
   /* height: 359px; */
@@ -1280,7 +1353,7 @@ color: white;
   padding: 20px 0;
 }
 .footer2-box {
-  text-align: right;
+  text-align: center;
 }
 .footer2-box>div{
   display: inline-block !important;
@@ -1296,10 +1369,10 @@ color: white;
 }
 .footer2-box>div>img{
   position: relative !important;
-  margin-left: 50px !important;
-    width: 300px !important;
-    height: auto !important;
-    min-width: inherit !important;
+  margin-left: 17px !important;
+  width: 242px !important;
+  height: auto !important;
+  min-width: inherit !important;
 }
 .footer2-box:nth-child(2) {
 }
@@ -1565,19 +1638,20 @@ color: white;
 /*filter*/
 /*-product-listing-*/
 .listing-product-box {
+  /* -webkit-box-shadow: 0px 1px 11px 0px #00000061; */
   box-shadow: 0px 1px 11px 0px #00000061;
   padding: 10px;
   position: relative;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 25px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  min-height: 390px;
+  /* min-height: 324px; */
   background: #fff;
-  max-height: 390px;
+  /* max-height: 324px;*/
 }
 .listing-product-box-offer-tag {
   text-align: left;
@@ -1585,19 +1659,30 @@ color: white;
   color: #a3247b;
 }
 .listing-product-box-img {
-  max-height: 220px;
+  /* max-height: 220px; */
   overflow: hidden;
   position: relative;
 }
-.listing-product-box-img > div {
+
+.imge>div{
   position: relative !important;
+
 }
-.listing-product-box-img > div > img {
+.imge>div>img{
   position: relative !important;
   width: 100% !important;
   height: auto !important;
   min-width: inherit !important;
 }
+/* .listing-product-box-img >imge > div {
+  position: relative !important;
+}
+.listing-product-box-img > imge >div > img {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  min-width: inherit !important;
+} */
 .listing-product-box-img img {
   width: 100%;
   max-height: 300px;
@@ -1605,6 +1690,7 @@ color: white;
 .listing-product-box-txt {
   text-align: center;
   color: #000;
+  padding-top: 7px;
 }
 .listing-product-box-txt p {
 }

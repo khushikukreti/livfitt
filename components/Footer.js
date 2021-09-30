@@ -36,6 +36,10 @@ function Footer() {
                   <li>
                     <a>Brand2</a>
                   </li>
+                  <li>
+                    <a>Brand3</a>
+                  </li>
+                 
                 </ul>
               </div>
             </div>
@@ -100,10 +104,10 @@ function Footer() {
       <section className="footer2">
     <div className="container">
         <div className="row ">
-            <div className="col-md-6">
+            <div className="col-md-4">
                 <div className="footer2-box " style={{textAlign:"left"}}>
                     <span className="payment">PAYMENT</span>
-                    <Image src="https://cosmetikaa.com/images/payment.jpg" layout="fill"/>
+                    <Image src="/payment.jpg" layout="fill"/>
                 </div>
             </div>
             {/* <div className="col-md-3">
@@ -112,7 +116,7 @@ function Footer() {
                     <Image src="https://cosmetikaa.com/images/payment.jpg" layout="fill"/>
                 </div>
             </div> */}
-            <div className="col-md-6">
+            <div className="col-md-3">
                 <div className="footer2-box">
                     <span>CONNECT</span>
                     <ul>
@@ -123,6 +127,21 @@ function Footer() {
                      
                     </ul>
                 </div>
+                {/*     width: 24%;
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top; */}
+            </div>
+            <div className="col-md-5">
+              <div className="footer2-box">
+              <span className="payment">DOWNLOAD OUR APP</span>
+              <div className="imge" style={{width:"24%",display:"inline-block",padding:"0 10px", verticalAlign:"top"}}>
+              <Image src="/appstore3.png" layout="fill" ></Image>
+              </div>
+              <div className="imge" style={{width:"24%",display:"inline-block",padding:"0 10px", verticalAlign:"top"}}>
+                <Image src="/playstore.png" layout="fill"></Image>
+                </div> 
+            </div>
             </div>
         </div>
     </div>

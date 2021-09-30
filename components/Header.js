@@ -251,7 +251,7 @@ function Header() {
                     <a>
                       {/* <Image src="" layout="fill"/> */}
                       <span>
-                        Accessories{" "}
+                        Clothing {" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
