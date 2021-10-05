@@ -9,7 +9,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 function Feminine({ pname, imgURL, pprice }) {
   return (
     <>
-      <div className="col-md-12" style={{paddingTop:"30px", paddingBottom:"30px"}}>
+      <div className="col-md-12" style={{ paddingBottom:"30px"}}>
         <div className="item">
           <a href="product-detail.php?slug=whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins"></a>
           <div className="listing-product-box">

@@ -182,7 +182,9 @@ function Homepage() {
             <div className="col-md-12">
               <div className="heading-img">
                 <div className="h1">TOP SELLiNG </div>
-                <div className="col-md-12  " style={{marginBottom:"30px"}}>
+                <div className="col-md-12  "
+                //  style={{marginBottom:"30px"}}
+                 >
                   <div className="padd">
                   <Slider {...settings3}>
                     <Feminine imgURL="/product1.jpg" pname="Gainer Collection" pprice={489}/>
@@ -242,7 +244,9 @@ function Homepage() {
       </div>
       </div>
       {/* <Banner style={{background:"transparent"}} imgURL="https://cosmetikaa.com/manager/images/slide-images/230421091035_desktopslide.jpg"></Banner> */}
+      <div className="col-md-12" style={{marginTop:"-30px"}}>
       <Products pname="TOP COLLECTiON"></Products>
+      </div>
       <div className="container">
       <div className="row">
       <div className="col-md-12 ">

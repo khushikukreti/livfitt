@@ -1,4 +1,5 @@
 import React from "react";
+import MenuIcon from '@mui/icons-material/Menu';
 // import "../styles/custom
 import Image from 'next/image'
 function Header() {
@@ -21,7 +22,7 @@ function Header() {
                   <input type="text" placeholder="what are you looking for?" />
                   <button  className="buttonn" type="submit">
                     <Image
-                      src="https://cosmetikaa.com/images/search.png"
+                      src="/search.png"
                      layout="fill"
                     />
                   </button>
@@ -35,7 +36,7 @@ function Header() {
                     <a>
           
                       <Image
-                        src="https://cosmetikaa.com/images/search.png"
+                        src="/search.png"
                         layout="fill"
                       />
                     </a>
@@ -252,7 +253,7 @@ function Header() {
 
                       {/* <Image srgghhhc="" layout="fill"/> */}
                       <span>
-                        Accessories{" "}
+                        Clothing and Accessories{" "}
                         <i className="fa fa-angle-down hidden-sm hidden-xs"></i>
                       </span>
                       <i className="fa fa-plus hidden-md hidden-lg"></i>
@@ -328,6 +329,9 @@ function Header() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="menuIcon">
+      <MenuIcon style={{fontSize:"34px", paddingLeft:"4px", marginTop:"3px"}}/>
       </section>
     </div>
   );
