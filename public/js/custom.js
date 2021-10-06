@@ -153,151 +153,7 @@ $(document).ready(function(){
  */
  /*confetti-animation */
  
- $('.slider1').owlCarousel({         
-     dots: false,
-    autoplayTimeout: 4000,
-    margin: 0,
-    autoplayHoverPause:true,
-     nav: false,
-     loop: true,
-     autoplay: true,
-     slideSpeed: 1000,
-     paginationSpeed: 1000,
-     center: false,
-     responsive: {
-       0: {
-         items: 1,
-         nav: false,
-         loop: false,
-         dots: true,
-       },
-       600: {
-         items: 1,
-         nav: false,
-         loop: false,
-         dots: true,
-       },
-       1000: {
-         items: 1,
-         nav: false,
-         loop: true,
-         margin: 0,
-         dots: true,
-       }
-     }
-   });
  
- 
- 
-   $('.daily-essential1a').owlCarousel({         
-     dots: false,
-     rtl: true,
-     autoplayTimeout: 4000,
-     margin: 0,
-     nav: false,
-     loop: true,
-     autoplay: true,
-     slideSpeed: 1000,
-     paginationSpeed: 1000,
-     center: false,
-     responsive: {
-       0: {
-         items: 2,
-         nav: true,
-         loop: true,
-         dots: false,
-         margin:0
-       },
-       600: {
-         items: 3,
-         nav: false,
-         loop: true,
-         margin: 20,
-         dots: false,
-       },
-       1000: {
-         items: 4,
-         nav: true,
-         loop: true,
-         margin: 20,
-         dots: false,
-       }
-     }
-   });
- 
- 
- 
- 
- 
-   $('.brand-slider').owlCarousel({         
-     dots: false,
-    autoplayTimeout: 4000,
-     margin: 0,
-     nav: false,
-     loop: true,
-     autoplay: true,
-     slideSpeed: 1000,
-     paginationSpeed: 1000,
-     center: true,
-     responsive: {
-       0: {
-         items: 3,
-         nav: false,
-         loop: true,
-         dots: false,
-       },
-       600: {
-         items: 3,
-         nav: true,
-         loop: true,
-         margin: 20,
-         dots: false,
-       },
-       1000: {
-         items: 6,
-         nav: true,
-         loop: true,
-         margin: 50,
-         dots: false,
-       }
-     }
-   });
- 
- 
- $('.continue-your-search').owlCarousel({         
-     dots: false,
-     autoplayTimeout: 4000,
-     margin: 0,
-      loop:true,
-     nav: true,
-     autoplay: true,
-     slideSpeed: 1000,
-     paginationSpeed: 1000,
-     center: false,
-     responsive: {
-       0: {
-         items: 2,
-         nav: true,
-         loop: true,
-         dots: false,
-         margin:0,
-       },
-       600: {
-         items: 2,
-         nav: true,
-         loop: true,
-         margin: 10,
-         dots: false,
-       },
-       1000: {
-         items: 4,
-         nav: true,
-         loop: true,
-         margin: 10,
-         dots: false,
-       }
-     }
-   });
  /* //=====================smooth scroll on anchor tag===================== */
  $(document).ready(function(){
    // Add smooth scrolling to all links
@@ -328,6 +184,7 @@ $(document).ready(function(){
  
  
   $('.listing-product-filter-list-heading').on('click', function(){
+    alert('hello');
     $(this).siblings('.listing-product-filter-list-options').slideToggle(100);
     $('.listing-product-filter-list-heading').not(this).siblings('.listing-product-filter-list-options').css({'display':'none'});
   });
@@ -428,41 +285,7 @@ $(document).ready(function(){
  });
  
  /**--------------show more---------- */
-  $('.product-detail-similar-products').owlCarousel({         
-   dots: false,
-   autoplayTimeout: 4000,
-   margin: 0,
-   nav: true,
-   loop: false,
-   autoplay: true,
-   slideSpeed: 1000,
-   paginationSpeed: 1000,
-   center: false,
-   responsive: {
-     0: {
-       items: 2,
-       nav: true,
-       loop: true,
-       dots: false,
-       margin:0,
-     },
-     600: {
-       items: 2,
-       nav: false,
-       loop: true,
-       margin: 0,
-       dots: false,
-     },
-     1000: {
-       items: 3,
-       nav: true,
-       loop: true,
-       margin: 20,
-       dots: false,
-     }
-   }
- });
- 
+  
  
  /*-------------------------------------------------------------------cart-page------------------------------------------------*/
  $('.cart-checkout-coupon-code span').on('click', function(){

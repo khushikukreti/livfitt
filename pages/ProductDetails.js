@@ -1,6 +1,23 @@
 import React from "react";
-
+import Slider from "react-slick";
+import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Feminine from "./comps/Feminine";
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import PaymentIcon from '@mui/icons-material/Payment';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 function ProductDetails() {
+  var settings3 = {
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   // setHeight = () => {
   //   // console.log('Click happened');
   //   let st=document.querySelector(".product-detail-product-description-container-box1")
@@ -215,7 +232,7 @@ function ProductDetails() {
                     <div class="custom-block custom-block-1">
                       <div>
                         <div class="icon-div">
-                          <em class="porto-icon-shipping icon-size"></em>
+                          <em class="porto-icon-shipping icon-size"><LocalShippingIcon style={{fontSize:"26px"}}/></em>
                         </div>
                         <div class="side-tool">
                           <h3>FREE SHIPPING</h3>
@@ -224,7 +241,7 @@ function ProductDetails() {
                       </div>
                       <div>
                         <div class="icon-div">
-                          <em class="porto-icon-rupee icon-size"></em>
+                          <em class="porto-icon-rupee icon-size"><PaymentIcon  style={{fontSize:"26px"}}/></em>
                         </div>
                         <div class="side-tool">
                           <h3>MONEY BACK</h3>
@@ -233,7 +250,7 @@ function ProductDetails() {
                       </div>
                       <div>
                         <div class="icon-div">
-                          <em class="porto-icon-support icon-size"></em>
+                          <em class="porto-icon-support icon-size"><SupportAgentIcon style={{fontSize:"26px"}} /></em>
                         </div>
                         <div class="side-tool">
                           <h3>24/7 SUPPORT</h3>
@@ -242,7 +259,7 @@ function ProductDetails() {
                       </div>
                       <div>
                         <div class="icon-div">
-                          <em class="porto-icon-shipped icon-size"></em>
+                          <em class="porto-icon-shipped icon-size"><DeliveryDiningIcon style={{fontSize:"26px"}}/></em>
                         </div>
                         <div class="side-tool">
                           <h3>CASH ON DELIVERY</h3>
@@ -356,8 +373,9 @@ function ProductDetails() {
                 </div>
 
                 <div class="product-detail-product-description-container-box howuse-box">
-                  <div class="product-detail-product-description-container-box1" 
-                  // onClick={setHeight}
+                  <div
+                    class="product-detail-product-description-container-box1"
+                    // onClick={setHeight}
                   >
                     <table class="product-detail-table">
                       <tbody>
@@ -381,6 +399,72 @@ function ProductDetails() {
                   </div>
                 </div>
               </div>
+              <div class="heading2">CUSTOMERS ALSO VIEWED</div>
+              <div className="product-detail-other-product-slider">
+                <div className="padd">
+                  <Slider {...settings3}>
+                    <Feminine
+                      imgURL="/product1.jpg"
+                      pname="Gainer Collection"
+                      pprice={489}
+                    />
+                    <Feminine
+                      imgURL="/product2.jpg"
+                      pname="Gainer Collection"
+                      pprice={489}
+                    />
+                    <Feminine
+                      imgURL="/product3.jpg"
+                      pname="Gainer Collection"
+                      pprice={489}
+                    />
+                    <Feminine
+                      imgURL="/product4.jpg"
+                      pname="Gainer Collection"
+                      pprice={489}
+                    />
+                    <Feminine
+                      imgURL="/product5.jpg"
+                      pname="Gainer Collection"
+                      pprice={489}
+                    />
+                    <Feminine
+                      imgURL="/product1.jpg"
+                      pname="Gainer Collection"
+                      pprice={489}
+                    />
+                  </Slider>
+                </div>
+              </div>
+              <div class="heading2">REVIEW &amp; RATINGS</div>
+              <div class="product-detail-rating-review-box" id="rating-box">
+                <div class="product-detail-overall-review-box">
+                  <div class="product-detail-overall-review-box1">
+                    <div class="product-detail-overall-review-box1a">
+                      <strong>5</strong>
+                      <span>/1</span>
+                    </div>
+                    <div class="product-detail-overall-review-box1b">
+                      <strong>Overall Rating</strong>
+                      <span>1</span>
+                    </div>
+                  </div>
+
+                  <div class="product-detail-overall-review-box2">
+                    <a href="">Write Review</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-3 col-xs-6 visible-lg visible-md"
+              style={{position:"sticky", top:"20px", marginTop: "85px"}}
+            >
+               <Feminine
+                      imgURL="/product1.jpg"
+                      pname="Gainer Collection"
+                      pprice={489}
+                    />
             </div>
           </div>
         </div>

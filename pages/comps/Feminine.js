@@ -11,9 +11,9 @@ function Feminine({ pname, imgURL, pprice }) {
     <>
       <div className="col-md-12" style={{ paddingBottom:"30px"}}>
         <div className="item">
-          <a href="product-detail.php?slug=whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins"></a>
+          
           <div className="listing-product-box">
-            <a href="product-detail.php?slug=whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins">
+            
               <div className="listing-product-box-img">
                 <div className="imge"> <Image src={`${imgURL}`}  layout="fill"/></div>
                
@@ -45,7 +45,7 @@ function Feminine({ pname, imgURL, pprice }) {
                 </div>{" "}
                 <span className="rating_num"></span>
               </div>
-            </a>
+          
             {/* <div className="listing-product-box-btns">
               <a href="product-detail.php?slug=whisper-ultra-night-sanitary-pads-for-women-xxxl-10-napkins"></a>
               <div className="listing-product-box-wishlist-btn">
