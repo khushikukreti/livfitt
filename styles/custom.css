@@ -2146,7 +2146,8 @@ color: white;
 }
 
 .product-detail-product-3-steps {
-  background-color: #f7f7f7;
+  font-size: 13px;
+  /* background-color: #f7f7f7; */
   border-top: 1px solid #eee;
   color: #3f414d;
   padding: 11px 22px 11px 25px;
@@ -2172,6 +2173,7 @@ color: white;
   background: #fff;
 }
 .product-detail-product-description-container-tabs {
+  color: #000;
   padding: 0;
   border-bottom: 2px solid #ebebeb;
 }
@@ -2191,12 +2193,14 @@ color: white;
 }
 
 .product-detail-product-description-container-box {
+  color: #000;
 }
 .product-detail-product-description-container-box1 {
+  color: #000;
   font-size: 15px;
   line-height: 1.8;
   transition: all 0.3s ease-in-out;
-  height: 200px;
+  height: 100%;
   overflow: hidden;
 }
 .description-box {

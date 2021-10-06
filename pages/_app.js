@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-
+import Head from 'next/head'
 // import "../styles/bootstrap2.css"
 import "../styles/bootstrap.css";
 import "../styles/custom.css"
