@@ -1857,6 +1857,7 @@ color: white;
   background: #16ABB4 !important;
 }
 .ui-slider-horizontal {
+  background-color: #000;
   height: 0.5em !important;
   margin-top: 20px;
 }

@@ -17,6 +17,14 @@ function ProductDetails() {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      { breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   // setHeight = () => {
   //   // console.log('Click happened');
@@ -39,7 +47,7 @@ function ProductDetails() {
                   style={{ position: "relative" }}
                 >
                   <img
-                    src="https://cosmetikaa.com/manager/images/product-images/front/nivea-lip-balm-fruity-cherry-shine-4-8g_1.jpg"
+                    src="/product4.jpg"
                     alt="1"
                     style={{ width: "100%", height: "100%" }}
                   />
@@ -54,7 +62,7 @@ function ProductDetails() {
                   <div class="small-container">
                     <div id="small-img-roll">
                       <img
-                        src="https://cosmetikaa.com/manager/images/product-images/front/nivea-lip-balm-fruity-cherry-shine-4-8g_1.jpg"
+                        src="/product4.jpg"
                         class="show-small-img "
                         alt="now"
                         style={{
@@ -75,7 +83,7 @@ function ProductDetails() {
             </div>
             <div className="col-md-7">
               <div className="product-detail-product-content">
-                <div className="row">
+                <div className="">
                   <div class="product-detail-product-heading-div">
                     <div class="product-detail-product-heading">
                       NIVEA Lip Balm, Fruity Cherry Shine, 4.8g

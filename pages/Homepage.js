@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BannerSlide from "./comps/BannerSlide";
 import TopCollection from "./TopCollection";
+import Bannerr from "./comps/bannerr";
 // export default function SimpleSlider() {
 //   var settings = {
 //     dots: true,
@@ -29,6 +30,15 @@ function Homepage() {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      { breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+   
   };
   var settings2 = {
     dots: false,
@@ -38,6 +48,14 @@ function Homepage() {
     speed: 300,
     slidesToShow: 6,
     slidesToScroll: 1,
+    responsive: [
+      { breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   var settings3 = {
     dots: false,
@@ -47,6 +65,14 @@ function Homepage() {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      { breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   var settings4 = {
     dots: false,
@@ -56,14 +82,22 @@ function Homepage() {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      { breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <div>
       
         <Slider {...settings}>
-          <BannerSlide imgURL="/banner.jpg"></BannerSlide>
-          <BannerSlide imgURL="/banner.jpg"></BannerSlide>
-          <BannerSlide imgURL="/banner.jpg"></BannerSlide>
+          <Bannerr imgURL="/banner.jpg"></Bannerr>
+          <Bannerr imgURL="/banner.jpg"></Bannerr>
+          <Bannerr imgURL="/banner.jpg"></Bannerr>
 
         </Slider>
       

@@ -1,7 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Feminine from "./comps/Feminine";
 import Head from "next/head";
 function ProductListing() {
+  let [flag,setFlag]=useState("false");
+
+  const showPrice=(e)=>{
+    console.log("clicked");
+    // console.log("clicked");
+    let headd=e.target.nextElementSibling;
+    console.log(headd);
+    if(flag){
+     headd.style.display="block";
+      setFlag(!flag);
+    }else{
+      headd.style.display="none";
+      setFlag(!flag);
+    }
+    // console.log(headd);
+    // if(flag){
+    //  headd.style.display="block";
+    //   setFlag(!flag);
+    // }else{
+    //   headd.style.display="none";
+    //   setFlag(!flag);
+    // }
+    
+  }
+  const showBrand=(e)=>{
+    console.log("clicked");
+    let headd=e.target.nextElementSibling;
+    console.log(headd);
+    if(flag){
+     headd.style.display="block";
+      setFlag(!flag);
+    }else{
+      headd.style.display="none";
+      setFlag(!flag);
+    }
+    
+  }
+  const showCategory=(e)=>{
+    console.log("clicked");
+    let headd=e.target.nextElementSibling;
+    console.log(headd);
+    if(flag){
+     headd.style.display="block";
+      setFlag(!flag);
+    }else{
+      headd.style.display="none";
+      setFlag(!flag);
+    }
+  }
   return (
     <>
       <Head>
@@ -75,8 +124,8 @@ function ProductListing() {
                         </div>
                       </div>
 
-                      <div className="listin-product-filter-list">
-                        <div className="listing-product-filter-list-heading">
+                      <div className="listin-product-filter-list" >
+                        <div className="listing-product-filter-list-heading" onClick={showPrice}>
                           PRICE <i className="fa fa-plus"></i>
                         </div>
                         <div
@@ -126,7 +175,7 @@ function ProductListing() {
                       </div>
 
                       <div className="listin-product-filter-list">
-                        <div className="listing-product-filter-list-heading">
+                        <div className="listing-product-filter-list-heading" onClick={showPrice}>
                           BRAND <i className="fa fa-plus"></i>
                         </div>
                         <div className="listing-product-filter-list-options">
@@ -476,7 +525,7 @@ function ProductListing() {
                       </div>
 
                       <div className="listin-product-filter-list">
-                        <div className="listing-product-filter-list-heading">
+                        <div className="listing-product-filter-list-heading" onClick={showPrice}>
                           CATEGORY <i className="fa fa-plus"></i>
                         </div>
                         <div className="listing-product-filter-list-options">
