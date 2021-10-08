@@ -258,7 +258,7 @@ function ProductDetails() {
 
                         <button
                           className="btn btn-fill-out add-to-bag-product"
-                          onclick="addtocart(this);"
+                          // onclick="addtocart(this);"
                           data-pro_id="710"
                           type="button"
                         >
