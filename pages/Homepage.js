@@ -95,9 +95,10 @@ function Homepage() {
     <div>
       
         <Slider {...settings}>
-          <Bannerr imgURL="/banner.jpg"></Bannerr>
-          <Bannerr imgURL="/banner.jpg"></Bannerr>
-          <Bannerr imgURL="/banner.jpg"></Bannerr>
+          <div className="col-md-12"> <Bannerr imgURL="/banner.jpg"></Bannerr></div>
+          <div className="col-md-12">    <Bannerr imgURL="/banner.jpg"></Bannerr></div>
+          <div className="col-md-12">    <Bannerr imgURL="/banner.jpg"></Bannerr></div>
+
 
         </Slider>
       

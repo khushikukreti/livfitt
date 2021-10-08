@@ -1,19 +1,29 @@
 import React, { useEffect, useState } from "react";
+import CloseIcon from '@mui/icons-material/Close';
 import Feminine from "./comps/Feminine";
 import Head from "next/head";
+import BreadCrum from "./comps/BreadCrum";
+import ListedProducts from "./comps/ListedProducts";
 function ProductListing() {
-  let [flag,setFlag]=useState("false");
-
-  const showPrice=(e)=>{
+  let [flag, setFlag] = useState("false");
+  const openFilterBox=(e)=>{
+    let openBox=document.querySelector(".ps-sticky");
+    openBox.style.left="0"
+  }
+  const closeFilter=(e)=>{
+    let openBox=document.querySelector(".ps-sticky");
+    openBox.style.left="-100%"
+  }
+  const showPrice = (e) => {
     console.log("clicked");
     // console.log("clicked");
-    let headd=e.target.nextElementSibling;
+    let headd = e.target.nextElementSibling;
     console.log(headd);
-    if(flag){
-     headd.style.display="block";
+    if (flag) {
+      headd.style.display = "block";
       setFlag(!flag);
-    }else{
-      headd.style.display="none";
+    } else {
+      headd.style.display = "none";
       setFlag(!flag);
     }
     // console.log(headd);
@@ -24,56 +34,64 @@ function ProductListing() {
     //   headd.style.display="none";
     //   setFlag(!flag);
     // }
-    
-  }
-  const showBrand=(e)=>{
+  };
+  const showBrand = (e) => {
     console.log("clicked");
-    let headd=e.target.nextElementSibling;
+    let headd = e.target.nextElementSibling;
     console.log(headd);
-    if(flag){
-     headd.style.display="block";
+    if (flag) {
+      headd.style.display = "block";
       setFlag(!flag);
-    }else{
-      headd.style.display="none";
+    } else {
+      headd.style.display = "none";
       setFlag(!flag);
     }
-    
-  }
-  const showCategory=(e)=>{
+  };
+  const showCategory = (e) => {
     console.log("clicked");
-    let headd=e.target.nextElementSibling;
+    let headd = e.target.nextElementSibling;
     console.log(headd);
-    if(flag){
-     headd.style.display="block";
+    if (flag) {
+      headd.style.display = "block";
       setFlag(!flag);
-    }else{
-      headd.style.display="none";
+    } else {
+      headd.style.display = "none";
       setFlag(!flag);
     }
-  }
+  };
   return (
     <>
-      <Head>
+      {/* <Head>
         <script type="text/javascript" src="js/jquery.js"></script>
 
         <script type="text/javascript" src="js/custom.js"></script>
-      </Head>
+      </Head> */}
+      <BreadCrum></BreadCrum>
       <section
         className="listing-heading-section"
-        style={{ paddingTop: "40px" }}
+        style={{ paddingTop: "15px" }}
       >
         <div className="container">
           <div className="row">
+            <div class="col-md-12">
+              <div
+                class="open-filter-box hidden-md hidden-lg"
+                style={{position: "absolute", top: "0px"}}
+                onClick={openFilterBox}
+              >
+                <img src="https://cosmetikaa.com/images/filter-icon.png" />
+              </div>
+            </div>
             <div className="col-md-12">
               <div className="row">
                 <div className="col-md-3 ps-sticky">
                   <div
                     className="listing-product-filter-box"
-                    style={{ color: "black" }}
+                    style={{ color: "black" , marginTop:"10px"}}
                   >
                     <form name="sortfrm" className="sortfrm" method="post">
-                      <div className="close-listing-filter-box hidden-lg hidden-md">
-                        <i className="fa fa-close"></i>
+                      <div className="close-listing-filter-box hidden-lg hidden-md" onClick={closeFilter}>
+                        <CloseIcon/>
                       </div>
 
                       <div className="listing-product-by-sort">
@@ -124,8 +142,11 @@ function ProductListing() {
                         </div>
                       </div>
 
-                      <div className="listin-product-filter-list" >
-                        <div className="listing-product-filter-list-heading" onClick={showPrice}>
+                      <div className="listin-product-filter-list">
+                        <div
+                          className="listing-product-filter-list-heading"
+                          onClick={showPrice}
+                        >
                           PRICE <i className="fa fa-plus"></i>
                         </div>
                         <div
@@ -175,7 +196,10 @@ function ProductListing() {
                       </div>
 
                       <div className="listin-product-filter-list">
-                        <div className="listing-product-filter-list-heading" onClick={showPrice}>
+                        <div
+                          className="listing-product-filter-list-heading"
+                          onClick={showPrice}
+                        >
                           BRAND <i className="fa fa-plus"></i>
                         </div>
                         <div className="listing-product-filter-list-options">
@@ -186,7 +210,7 @@ function ProductListing() {
                               name="filterbrand[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Wella Professionals{" "}
+                            <span className="checkmark1"></span> Brand1{" "}
                           </label>
 
                           <label className="chek-1">
@@ -196,8 +220,7 @@ function ProductListing() {
                               name="filterbrand[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Schwarzkopf
-                            Professional{" "}
+                            <span className="checkmark1"></span> Brand2{" "}
                           </label>
 
                           <label className="chek-1">
@@ -207,7 +230,7 @@ function ProductListing() {
                               name="filterbrand[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Lotus Professional{" "}
+                            <span className="checkmark1"></span> Brand3{" "}
                           </label>
 
                           <label className="chek-1">
@@ -217,10 +240,10 @@ function ProductListing() {
                               name="filterbrand[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Matrix{" "}
+                            <span className="checkmark1"></span> Brand4{" "}
                           </label>
 
-                          <label className="chek-1">
+                          {/* <label className="chek-1">
                             <input
                               type="checkbox"
                               value="7"
@@ -348,7 +371,8 @@ function ProductListing() {
                               name="filterbrand[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> GK Global Keratin{" "}
+                            <span className="checkmark1"></span> GK Global
+                            Keratin{" "}
                           </label>
 
                           <label className="chek-1">
@@ -358,7 +382,8 @@ function ProductListing() {
                               name="filterbrand[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Godrej Professional{" "}
+                            <span className="checkmark1"></span> Godrej
+                            Professional{" "}
                           </label>
 
                           <label className="chek-1">
@@ -520,12 +545,15 @@ function ProductListing() {
                               className="sortby"
                             />
                             <span className="checkmark1"></span> RICA{" "}
-                          </label>
+                          </label> */}
                         </div>
                       </div>
 
                       <div className="listin-product-filter-list">
-                        <div className="listing-product-filter-list-heading" onClick={showPrice}>
+                        <div
+                          className="listing-product-filter-list-heading"
+                          onClick={showPrice}
+                        >
                           CATEGORY <i className="fa fa-plus"></i>
                         </div>
                         <div className="listing-product-filter-list-options">
@@ -536,7 +564,7 @@ function ProductListing() {
                               name="filtercat[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Hair Oil{" "}
+                            <span className="checkmark1"></span> Category1{" "}
                           </label>
 
                           <label className="chek-1">
@@ -546,7 +574,7 @@ function ProductListing() {
                               name="filtercat[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Hair Shampoo{" "}
+                            <span className="checkmark1"></span> Category2{" "}
                           </label>
 
                           <label className="chek-1">
@@ -556,7 +584,7 @@ function ProductListing() {
                               name="filtercat[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Hair Care Combo{" "}
+                            <span className="checkmark1"></span> Category3{" "}
                           </label>
 
                           <label className="chek-1">
@@ -566,7 +594,7 @@ function ProductListing() {
                               name="filtercat[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Hair Conditioner{" "}
+                            <span className="checkmark1"></span> Category4{" "}
                           </label>
 
                           <label className="chek-1">
@@ -576,18 +604,18 @@ function ProductListing() {
                               name="filtercat[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Hair Serum{" "}
+                            <span className="checkmark1"></span> Category5{" "}
                           </label>
 
-                          <label className="chek-1">
+                          {/* <label className="chek-1">
                             <input
                               type="checkbox"
                               value="16"
                               name="filtercat[]"
                               className="sortby"
                             />
-                            <span className="checkmark1"></span> Hair Masks &amp;
-                            Creams{" "}
+                            <span className="checkmark1"></span> Hair Masks
+                            &amp; Creams{" "}
                           </label>
 
                           <label className="chek-1">
@@ -659,7 +687,7 @@ function ProductListing() {
                               className="sortby"
                             />
                             <span className="checkmark1"></span> Hair Wax{" "}
-                          </label>
+                          </label> */}
                         </div>
                       </div>
 
@@ -674,102 +702,102 @@ function ProductListing() {
                 </div>
                 <div className="col-md-9">
                   <div className="row catalogProduct">
-                    <div className="col-md-4 col-xs-6 pd-0">
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
                       {" "}
-                      <Feminine
-                        pname="Product detail"
+                      <ListedProducts
+                        pname="Product Detail"
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
                       {" "}
-                      <Feminine
-                        pname="Product detail "
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />
                     </div>
-                    <div className="col-md-4 col-xs-6 pd-0">
-                      <Feminine
-                        pname="Product detail "
+                    <div className="col-md-4 col-xs-6 pd-0" style={{padding:"0px"}}>
+                      <ListedProducts
+                        pname="Product Detail "
                         imgURL="/image.jpg"
                         pprice={234}
                       />

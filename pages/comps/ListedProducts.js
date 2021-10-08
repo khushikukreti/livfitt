@@ -6,13 +6,13 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faHeart} from '@fortawesome/free-solid-svg-icons';
 // import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-function Feminine({ pname, imgURL, pprice }) {
+function ListedProducts({ pname, imgURL, pprice }) {
   return (
     <>
-      <div className="col-md-12" style={{ paddingBottom:"30px"}}>
+      <div className="col-md-12 pd" style={{padding:"0px"}}>
         <div className="item">
           
-          <div className="listing-product-box">
+          <div className="listing-product-box " style={{marginBottom:"10px"}}>
             
               <div className="listing-product-box-img">
                 <div className="imge"> <Image src={`${imgURL}`}  layout="fill"/></div>
@@ -72,4 +72,4 @@ function Feminine({ pname, imgURL, pprice }) {
   );
 }
 
-export default Feminine;
+export default ListedProducts;
