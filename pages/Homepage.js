@@ -99,17 +99,22 @@ function Homepage() {
   return (
     <>
       <div>
-        <Carousel autoPlay={true} interval={3000} swipeable={true} infiniteLoop={true}>
+        {/* <Carousel
+          autoPlay={true}
+          interval={3000}
+          swipeable={true}
+          infiniteLoop={true}
+        > */}
           {/* {/* <div className="col-md-12"> <Bannerr imgURL="/banner.jpg"></Bannerr></div> */}
           <div className="col-md-12">
             {" "}
             <Bannerr imgURL="/banner.jpg"></Bannerr>
           </div>
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             {" "}
             <Bannerr imgURL="/banner.jpg"></Bannerr>
           </div>
-        </Carousel>
+        </Carousel> */}
 
         {/* <div className="banner-slide">
       <Slider {...settings}>
