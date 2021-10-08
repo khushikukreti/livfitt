@@ -1,4 +1,14 @@
 @media only screen and (max-width: 500px) {
+  .product-new-price{
+    font-size: 13px;
+  }
+  .pd1{
+    padding: 2px !important;
+    padding-bottom: 20px !important;
+  }
+  .hh{
+    max-height: 138px;
+  }
   .h1{
     font-size: 30px !important;
   }
@@ -110,10 +120,13 @@
     right: 0;
   }
   .daily-essential1aa {
-    min-height: 255px;
+    /* min-height: 255px; */
     margin: 0px;
-    box-shadow: none;
-    border: 1px solid #e2e2e2;
+    /* box-shadow: none;
+     */
+  box-shadow: 0px -1px 20px 0px #16abb4d9;
+
+    /* border: 1px solid #e2e2e2; */
   }
   .daily-essential1aa img {
     width: 100%;

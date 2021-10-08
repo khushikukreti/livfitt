@@ -5,7 +5,7 @@ function DailyEssential({ imgURL }) {
   return (
     
       <li className="item">
-        <div className="daily-essential1aa">
+        <div className="daily-essential1aa hh">
           <a href="listing.php?category=fragnances">
             <Image
               src={`${imgURL}`}

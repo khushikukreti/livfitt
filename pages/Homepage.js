@@ -104,6 +104,8 @@ function Homepage() {
           interval={3000}
           swipeable={true}
           infiniteLoop={true}
+        
+          showThumbs={false}
         > */}
           {/* {/* <div className="col-md-12"> <Bannerr imgURL="/banner.jpg"></Bannerr></div> */}
           <div className="col-md-12">
@@ -199,23 +201,23 @@ function Homepage() {
                   <div className="h1">SHOP BY CATEGORY</div>
                   <div className="col-md-12 ">
                     <div className="row">
-                      <div className="col-md-4">
+                      <div className="col-md-4  col-xs-6">
                         <DailyEssential imgURL="/protien.jpg"></DailyEssential>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-4  col-xs-6">
                         <DailyEssential imgURL="/preworkout.jpg"></DailyEssential>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-4  col-xs-6">
                         <DailyEssential imgURL="/postworkout.jpg"></DailyEssential>
                       </div>
 
-                      <div className="col-md-4">
+                      <div className="col-md-4  col-xs-6">
                         <DailyEssential imgURL="/fatburnner.jpg"></DailyEssential>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-4  col-xs-6">
                         <DailyEssential imgURL="/vitamin1.jpg"></DailyEssential>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-4  col-xs-6">
                         <DailyEssential imgURL="/app.jpg"></DailyEssential>
                       </div>
                     </div>

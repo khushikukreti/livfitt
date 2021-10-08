@@ -9,7 +9,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 function Feminine({ pname, imgURL, pprice }) {
   return (
     <>
-      <div className="col-md-12" style={{ paddingBottom:"30px"}}>
+      <div className="col-md-12 pd1" style={{ paddingBottom:"30px"}}>
         <div className="item">
           
           <div className="listing-product-box">
