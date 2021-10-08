@@ -227,7 +227,7 @@ function ProductDetails() {
                 //   </div> */}
                     <div className="product-detail-product-price-box">
                       {" "}
-                      <i className="fa fa-rupee"></i> 185{" "}
+                      <i className="fa fa-rupee"></i> ₹ 185{" "}
                       <p>inclusive of all taxes </p>
                     </div>
 
