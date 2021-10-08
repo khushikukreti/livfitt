@@ -307,8 +307,8 @@ function ProductDetails() {
                               <input
                                 type="text"
                                 placeholder="Enter Pincode"
-                                maxlength="6"
-                                onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
+                                maxLength="6"
+                                onKeyPress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
                                 required=""
                                 className="area-code"
                               />

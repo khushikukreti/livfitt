@@ -5,7 +5,7 @@ import { Slider, RangeSlider, InputGroup, InputNumber, Row, Col } from 'rsuite';
 
 // To include the default styles
 import 'react-rangeslider/lib/index.css'
-function slider() {
+function Slider() {
     var Slider = require('react-rangeslider')
     // let [ivalue,setValue]=useState(50)
     const [value, setValue] = React.useState([10, 50]);
@@ -63,5 +63,5 @@ function slider() {
     )
 }
 
-export default slider
+export default Slider
  

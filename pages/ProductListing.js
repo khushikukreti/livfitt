@@ -73,9 +73,9 @@ function ProductListing() {
       >
         <div className="container">
           <div className="row">
-            <div class="col-md-12">
+            <div className="col-md-12">
               <div
-                class="open-filter-box hidden-md hidden-lg"
+                className="open-filter-box hidden-md hidden-lg"
                 style={{position: "absolute", top: "0px"}}
                 onClick={openFilterBox}
               >

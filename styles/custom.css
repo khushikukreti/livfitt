@@ -2,6 +2,15 @@
   font-family: "alien-league";
   src: url("../fonts/alienleague.woff") format("woff");
 }
+.thumbs-wrapper{
+  display: none !important;
+}
+.carousel-status{
+  display: none !important;
+}
+.control-arrow{
+  display: none !important;
+}
 .section {
   padding-top: 25px;
   background: #fff;
