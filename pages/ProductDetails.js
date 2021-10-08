@@ -164,6 +164,7 @@ function ProductDetails() {
               <div className="product-detail-product-content">
                 <div className="">
                   <div className="product-detail-product-heading-div">
+                    <p>Vendor name</p>
                     <div className="product-detail-product-heading">
                       NIVEA Lip Balm, Fruity Cherry Shine, 4.8g
                     </div>

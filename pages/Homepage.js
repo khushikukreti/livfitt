@@ -410,32 +410,32 @@ function Homepage() {
                 <Feminine
                   imgURL="/product1.jpg"
                   pname="Product Change "
-                  ppricee={435}
+                  pprice={435}
                 />
                 <Feminine
                   imgURL="/product1.jpg"
                   pname="Product Change "
-                  ppricee={435}
+                  pprice={435}
                 />
                 <Feminine
                   imgURL="/product1.jpg"
                   pname="Product Change "
-                  ppricee={435}
+                  pprice={435}
                 />
                 <Feminine
                   imgURL="/product1.jpg"
                   pname="Product Change "
-                  ppricee={435}
+                  pprice={435}
                 />
                 <Feminine
                   imgURL="/product1.jpg"
                   pname="Product Change "
-                  ppricee={435}
+                  pprice={435}
                 />
                 <Feminine
                   imgURL="/product1.jpg"
                   pname="Product Change "
-                  ppricee={435}
+                  pprice={435}
                 />
               </Slider>
             </div>

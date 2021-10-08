@@ -24,6 +24,10 @@ function Feminine({ pname, imgURL, pprice }) {
                 </div>
               </div>
               <div className="listing-product-box-txt">
+              <p>
+                Vendor Name
+                </p>
+                {/* <br /> */}
                 <p>
                  {`${pname}`}
                 </p>

@@ -8,12 +8,15 @@ function Img() {
     smallImage: {
         alt: 'Wristwatch by Ted Baker London',
         isFluidWidth: true,
-        src: "/APPAREL.jpg"
+        imageClassName:"imge",
+        src: "/APPAREL.jpg",
+        width:100,
+        height:100
     },
     largeImage: {
         src: "/APPAREL.jpg",
-        width: 1200,
-        height: 1800
+        width: 500,
+        height: 500
     }
 }} />
         </div>

@@ -24,6 +24,7 @@ function ListedProducts({ pname, imgURL, pprice }) {
                 </div>
               </div>
               <div className="listing-product-box-txt">
+                <p>Vendor Name</p> 
                 <p>
                  {`${pname}`}
                 </p>
