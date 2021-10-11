@@ -1352,6 +1352,7 @@ a:hover {
 .footer-img {
 }
 .footer1 {
+  background-color: #050606;
   border-bottom: 1px solid #e8e8e8;
   padding: 20px 0;
   border-top: 1px solid #e8e8e8;
@@ -1377,6 +1378,7 @@ a:hover {
 }
 
 .footer2 {
+  background-color: #050606;
   border-bottom: 1px solid #e8e8e8;
   padding: 20px 0;
 }
@@ -1498,6 +1500,7 @@ a:hover {
 }
 
 .listing-heading-section {
+  background-color: #FFF;
 }
 .listing-heading {
   text-align: center;
@@ -1941,7 +1944,8 @@ a:hover {
 
 /*----------------------------------------------------------product-detail-page--------------------------------------------------------*/
 .product-detail-container {
-  margin-bottom: 50px;
+  background: #FFF;
+  padding-bottom: 50px;
 }
 .product-detail-product-img {
 }
@@ -2167,6 +2171,7 @@ a:hover {
 }
 
 .product-detail-product-3-steps {
+  color: #000;
   font-size: 13px;
   /* background-color: #f7f7f7; */
   border-top: 1px solid #eee;
@@ -2190,7 +2195,8 @@ a:hover {
 }
 
 .product-detail-2 {
-  margin-bottom: 15px;
+  background: #FFF;
+  padding-bottom: 15px;
 }
 .product-detail-product-description-container {
   box-shadow: 0px 1px 11px 0px #00000061;
@@ -2225,7 +2231,7 @@ a:hover {
   font-size: 15px;
   line-height: 1.8;
   transition: all 0.3s ease-in-out;
-  height: 100%;
+  height: 100px;
   overflow: hidden;
 }
 .description-box {
@@ -2410,6 +2416,9 @@ a:hover {
 /*--------------------------------------------------------------signup-page----------------------------------------------------------*/
 
 .signup-sec {
+  background-color: #FFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .signup-sec1 {
   max-width: 500px;
@@ -2418,7 +2427,7 @@ a:hover {
   box-shadow: 1px 1px 20px 3px #e2e2e2;
   border-radius: 5px;
   text-align: center;
-  background: #fff;
+  background: #000;
 }
 .signup-sec-logo {
 }
@@ -2446,17 +2455,18 @@ a:hover {
   padding: 10px 15px;
   border: 1px solid #e2e2e2;
   border-radius: 4px;
-  box-shadow: 0px 10px 11px #e2e2e2;
+  /* box-shadow: 0px 10px 11px #e2e2e2; */
 }
 .signup-form-field input:focus {
   outline: none;
 }
 .signup-form-field button {
+  color: #000;
   width: 100%;
   padding: 10px 15px;
   border: 1px solid #e2e2e2;
   border-radius: 4px;
-  box-shadow: 0px 10px 11px #e2e2e2;
+  /* box-shadow: 0px 10px 11px #e2e2e2; */
 }
 .signup-form-field button:focus {
   outline: none;
@@ -4563,6 +4573,7 @@ input:focus {
   margin-top: 25px;
 }
 .side-bar {
+  color: #000;
   display: inline-block;
   width: 29%;
   vertical-align: top;
@@ -4578,6 +4589,7 @@ input:focus {
   padding-top: 10px;
 }
 .product-detail-product-heading-div {
+  color: #000;
   display: inline-block;
   width: 70%;
 }
@@ -4630,6 +4642,7 @@ input:focus {
     width: 100%;
   }
   .product-detail-product-3-steps {
+
     text-align: center;
   }
 }

@@ -9,6 +9,7 @@ import PaymentIcon from "@mui/icons-material/Payment";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
 function ProductDetails() {
+  const [text, setText] = useState("Read More");
   const [height, setHeight] = useState(true);
   const [specification, setSpecification] = useState(true);
   const [more, setMore] = useState(true);
@@ -31,20 +32,28 @@ function ProductDetails() {
       },
     ],
   };
-  const readHeight=(e)=>{
-    let x=e.target.previousSibling;
-    if(height){
-      x.style.height="200px"
-      setHeight(!height)
-    }else{
-      x.style.height="100%"
-      setHeight(!height)
-
+  const readHeight = (e) => {
+    let x = e.target.previousSibling;
+    if (height) {
+      x.style.height = "100%";
+      setHeight(!height);
+      setText("Read Less");
+    } else {
+      x.style.height = "100px";
+      setHeight(!height);
+      setText("Read More");
     }
-  }
+   console.log(x);
+  };
   let openMore = (e) => {
     // alert("hi")
-
+var currentHeight=document.querySelector(".product-detail-product-description-container-box1").style.height;
+// alert(currentHeight)
+if (currentHeight=="100%"){
+  setText("Read More")
+}else{
+  setText("Read Less")
+}
     let v1 = document.querySelector(".open-howuse-box");
     v1.classList.add("active");
     let r1 = document.querySelector(".open-ingredient-box");
@@ -60,7 +69,13 @@ function ProductDetails() {
   };
   let openDescription = (e) => {
     // alert("hi")
-
+    var currentHeight=document.querySelector(".product-detail-product-description-container-box1").style.height;
+    // alert(currentHeight)
+    if (currentHeight=="100%"){
+      setText("Read More")
+    }else{
+      setText("Read Less")
+    }
     let click = document.querySelector(".open-description-box");
     let click2 = document.querySelector(".description-box");
     let box1 = document.querySelector(".open-ingredient-box");
@@ -77,6 +92,13 @@ function ProductDetails() {
   };
 
   let openIngredient = (e) => {
+    var currentHeight=document.querySelector(".product-detail-product-description-container-box1").style.height;
+// alert(currentHeight)
+if (currentHeight=="100%"){
+  setText("Read More")
+}else{
+  setText("Read Less")
+}
     // alert("hi")
     let click = document.querySelector(".open-ingredient-box");
     click.classList.add("active");
@@ -102,7 +124,7 @@ function ProductDetails() {
     <>
       <section
         className="product-detail-container"
-        style={{ marginTop: "60px" }}
+        style={{ paddingTop: "60px" }}
       >
         <div className="container">
           <div className="row">
@@ -438,11 +460,20 @@ function ProductDetails() {
                       A foaming creamy cleanser that gently cleanses your skin
                       and removes impurities. Leaves your skin softened with a
                       silky smooth after-feel and fresh floral fragrance.
+                      A foaming creamy cleanser that gently cleanses your skin
+                      and removes impurities. Leaves your skin softened with a
+                      silky smooth after-feel and fresh floral fragrance.
+                      A foaming creamy cleanser that gently cleanses your skin
+                      and removes impurities. Leaves your skin softened with a
+                      silky smooth after-feel and fresh floral fragrance.
                     </p>
                     <p></p>
                   </div>
-                  <div className="product-detail-product-description-container-box-show-more" onClick={readHeight}>
-                    Read More <i className="fa fa-angle-down"></i>
+                  <div
+                    className="product-detail-product-description-container-box-show-more"
+                    onClick={readHeight}
+                  >
+                    {text} <i className="fa fa-angle-down"></i>
                   </div>
                 </div>
 
@@ -490,8 +521,11 @@ function ProductDetails() {
                       </tbody>
                     </table>
                   </div>
-                  <div className="product-detail-product-description-container-box-show-more" onClick={readHeight}>
-                    Read More <i className="fa fa-angle-down"></i>
+                  <div
+                    className="product-detail-product-description-container-box-show-more"
+                    onClick={readHeight}
+                  >
+                    {text} <i className="fa fa-angle-down"></i>
                   </div>
                 </div>
 
@@ -517,8 +551,11 @@ function ProductDetails() {
                       </tbody>
                     </table>
                   </div>
-                  <div className="product-detail-product-description-container-box-show-more" onClick={readHeight}>
-                    Read More <i className="fa fa-angle-down"></i>
+                  <div
+                    className="product-detail-product-description-container-box-show-more"
+                    onClick={readHeight}
+                  >
+                    {text} <i className="fa fa-angle-down"></i>
                   </div>
                 </div>
               </div>
