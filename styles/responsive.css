@@ -13,7 +13,7 @@
     font-size: 30px !important;
   }
   .product-detail-container{
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .effect-layla img {
     transform: translate3d(0, 0px, 0);

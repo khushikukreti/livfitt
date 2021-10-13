@@ -108,7 +108,7 @@ function Homepage() {
           showThumbs={false}
         > */}
           {/* {/* <div className="col-md-12"> <Bannerr imgURL="/banner.jpg"></Bannerr></div> */}
-          <div className="col-md-12">
+          <div className="">
             {" "}
             <Bannerr imgURL="/banner.jpg"></Bannerr>
           </div>

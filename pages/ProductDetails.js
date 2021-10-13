@@ -8,12 +8,8 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import PaymentIcon from "@mui/icons-material/Payment";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
+import ProductDescription from "./comps/ProductDescription";
 function ProductDetails() {
-  const [text, setText] = useState("Read More");
-  const [height, setHeight] = useState(true);
-  const [specification, setSpecification] = useState(true);
-  const [more, setMore] = useState(true);
-
   var settings3 = {
     dots: false,
     arrows: false,
@@ -32,94 +28,18 @@ function ProductDetails() {
       },
     ],
   };
-  const readHeight = (e) => {
-    let x = e.target.previousSibling;
-    if (height) {
-      x.style.height = "100%";
-      setHeight(!height);
-      setText("Read Less");
-    } else {
-      x.style.height = "100px";
-      setHeight(!height);
-      setText("Read More");
-    }
-   console.log(x);
-  };
-  let openMore = (e) => {
-    // alert("hi")
-var currentHeight=document.querySelector(".product-detail-product-description-container-box1").style.height;
-// alert(currentHeight)
-if (currentHeight=="100%"){
-  setText("Read More")
-}else{
-  setText("Read Less")
-}
-    let v1 = document.querySelector(".open-howuse-box");
-    v1.classList.add("active");
-    let r1 = document.querySelector(".open-ingredient-box");
-    let r2 = document.querySelector(".open-description-box");
-    r1.classList.remove("active");
-    r2.classList.remove("active");
-    let v2 = document.querySelector(".howuse-box");
-    v2.style.display = "block";
-    let d1 = document.querySelector(".ingredient-box");
-    let d2 = document.querySelector(".description-box");
-    d1.style.display = "none";
-    d2.style.display = "none";
-  };
-  let openDescription = (e) => {
-    // alert("hi")
-    var currentHeight=document.querySelector(".product-detail-product-description-container-box1").style.height;
-    // alert(currentHeight)
-    if (currentHeight=="100%"){
-      setText("Read More")
-    }else{
-      setText("Read Less")
-    }
-    let click = document.querySelector(".open-description-box");
-    let click2 = document.querySelector(".description-box");
-    let box1 = document.querySelector(".open-ingredient-box");
-    let box2 = document.querySelector(".open-howuse-box");
-    let desc1 = document.querySelector(".ingredient-box");
-    let desc2 = document.querySelector(".howuse-box");
-    click.classList.add("active");
-    box1.classList.remove("active");
-    box2.classList.remove("active");
+  const changeImage = (e) => {
+    let x = e.target;
+    let srcc = x.getAttribute("src");
+    let srccset = x.getAttribute("srcset");
+    console.log(srcc);
+    let image = document.querySelector(".imge").childNodes[0];
+    image.childNodes[0].setAttribute("src", srcc);
+    image.childNodes[0].setAttribute("srcset", srccset);
 
-    click2.style.display = "block";
-    desc1.style.display = "none";
-    desc2.style.display = "none";
+    // console.log(image2);
   };
 
-  let openIngredient = (e) => {
-    var currentHeight=document.querySelector(".product-detail-product-description-container-box1").style.height;
-// alert(currentHeight)
-if (currentHeight=="100%"){
-  setText("Read More")
-}else{
-  setText("Read Less")
-}
-    // alert("hi")
-    let click = document.querySelector(".open-ingredient-box");
-    click.classList.add("active");
-    let click2 = document.querySelector(".ingredient-box");
-
-    click2.style.display = "block";
-    let box1 = document.querySelector(".open-description-box");
-    let box2 = document.querySelector(".open-howuse-box");
-    box1.classList.remove("active");
-    box2.classList.remove("active");
-    let desc1 = document.querySelector(".description-box");
-    let desc2 = document.querySelector(".howuse-box");
-
-    desc1.style.display = "none";
-    desc2.style.display = "none";
-  };
-  // setHeight = () => {
-  //   // console.log('Click happened');
-  //   let st=document.querySelector(".product-detail-product-description-container-box1")
-  //   // st.style.
-  // }
   return (
     <>
       <section
@@ -128,24 +48,25 @@ if (currentHeight=="100%"){
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-md-4">
               <div className="product-detail-product-img">
                 <div
-                  className="show"
+                  className=""
                   href="manager/images/product-images/front/nivea-lip-balm-fruity-cherry-shine-4-8g_1.jpg"
                   style={{ position: "relative" }}
                 >
                   <div className="imge">
                     <Image
-                      src="/product4.jpg"
+                      src="/Listingimg1.jpg"
                       alt="1"
                       layout="fill"
                       style={{ width: "100%", height: "100%" }}
+                      id="1"
                     />
                   </div>
                 </div>
                 <div className="small-img">
-                  <div className="imge">
+                  {/* <div className="imge">
                     <Image
                       src="https://cosmetikaa.com/images/right-img.png"
                       className="icon-left"
@@ -153,10 +74,12 @@ if (currentHeight=="100%"){
                       alt=""
                       id="prev-img"
                     />
-                  </div>
+                  </div> */}
                   <div className="small-container">
-                    <div id="small-img-roll">
-                      <div className="imge">
+                    <div id="small-img-roll" onClick={changeImage}>
+                      <Image src="/ListingMain.jpg" layout="fill"></Image>
+
+                      {/* <div className="imge">
                         <Image
                           src="/product4.jpg"
                           className="show-small-img "
@@ -167,10 +90,22 @@ if (currentHeight=="100%"){
                             padding: "2px",
                           }}
                         />
-                      </div>
+                      </div> */}
+                    </div>
+                    <div id="small-img-roll" onClick={changeImage}>
+                      <Image src="/Listingimg1.jpg" layout="fill"></Image>
+                    </div>
+                    <div id="small-img-roll" onClick={changeImage}>
+                      <Image src="/Listingimg2.jpg" layout="fill"></Image>
+                    </div>
+                    <div id="small-img-roll" onClick={changeImage}>
+                      <Image src="/Listingimg3.jpg" layout="fill"></Image>
+                    </div>
+                    <div id="small-img-roll" onClick={changeImage}>
+                      <Image src="/Listingimg4.jpg" layout="fill"></Image>
                     </div>
                   </div>
-                  <div className="imge">
+                  {/* <div className="imge">
                     <Image
                       src="https://cosmetikaa.com/images/right-img.png"
                       className="icon-right"
@@ -178,17 +113,17 @@ if (currentHeight=="100%"){
                       alt=""
                       id="next-img"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-8">
               <div className="product-detail-product-content">
                 <div className="">
                   <div className="product-detail-product-heading-div">
                     <p>Vendor name</p>
                     <div className="product-detail-product-heading">
-                      NIVEA Lip Balm, Fruity Cherry Shine, 4.8g
+                      Lean Body, Meal Replacement, 4.8g
                     </div>
                     <div className="product-detail-product-quantity">
                       ( 4.8g)
@@ -425,7 +360,7 @@ if (currentHeight=="100%"){
                   </span> */}
                   </div>
                   <div className="product-detail-product-3-steps1">
-                    <span>SOLD BY :livfitt</span>
+                    <span>SOLD BY :vendor name</span>
                   </div>
                 </div>
               </div>
@@ -438,128 +373,8 @@ if (currentHeight=="100%"){
           <div className="row">
             <div className="col-md-9">
               <div className="heading2">PRODUCT DESCRIPTION</div>
-              <div className="product-detail-product-description-container">
-                <ul className="product-detail-product-description-container-tabs">
-                  <li
-                    className="active open-description-box"
-                    onClick={openDescription}
-                  >
-                    DESCRIPTION
-                  </li>
-                  <li className="open-ingredient-box" onClick={openIngredient}>
-                    SPECIFICATIONS
-                  </li>
-                  <li className="open-howuse-box" onClick={openMore}>
-                    MORE
-                  </li>
-                </ul>
-                <div className="product-detail-product-description-container-box description-box">
-                  <div className="product-detail-product-description-container-box1">
-                    <p></p>
-                    <p>
-                      A foaming creamy cleanser that gently cleanses your skin
-                      and removes impurities. Leaves your skin softened with a
-                      silky smooth after-feel and fresh floral fragrance.
-                      A foaming creamy cleanser that gently cleanses your skin
-                      and removes impurities. Leaves your skin softened with a
-                      silky smooth after-feel and fresh floral fragrance.
-                      A foaming creamy cleanser that gently cleanses your skin
-                      and removes impurities. Leaves your skin softened with a
-                      silky smooth after-feel and fresh floral fragrance.
-                    </p>
-                    <p></p>
-                  </div>
-                  <div
-                    className="product-detail-product-description-container-box-show-more"
-                    onClick={readHeight}
-                  >
-                    {text} <i className="fa fa-angle-down"></i>
-                  </div>
-                </div>
-
-                <div className="product-detail-product-description-container-box ingredient-box">
-                  <div className="product-detail-product-description-container-box1">
-                    <p>
-                      <b>Key Features</b>
-                    </p>
-                    <ul>
-                      <li></li>
-                    </ul>
-                    <p>
-                      <b>General</b>
-                    </p>
-                    <table className="product-detail-table">
-                      <tbody>
-                        <tr>
-                          <td>Brand</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>Model Name</td>
-                          <td>
-                            Oriflame Optimals Clear White Lightening Cleansing
-                            Foam-150ml
-                          </td>
-                        </tr>
-                        {/* <!--<tr><td>Quantity</td><td>1</td></tr>--> */}
-                        <tr>
-                          <td>Best Before</td>
-                          <td>36 Months</td>
-                        </tr>
-                        <tr>
-                          <td>Pack of</td>
-                          <td>1</td>
-                        </tr>
-                        <tr>
-                          <td>Suitable for</td>
-                          <td>Skin brightning</td>
-                        </tr>
-                        <tr>
-                          <td>Type</td>
-                          <td>Cleanser</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div
-                    className="product-detail-product-description-container-box-show-more"
-                    onClick={readHeight}
-                  >
-                    {text} <i className="fa fa-angle-down"></i>
-                  </div>
-                </div>
-
-                <div className="product-detail-product-description-container-box howuse-box">
-                  <div
-                    className="product-detail-product-description-container-box1"
-                    // onClick={setHeight}
-                  >
-                    <table className="product-detail-table">
-                      <tbody>
-                        <tr>
-                          <td>Manufacturer</td>
-                          <td>Oriflame India Private Limited</td>
-                        </tr>
-                        <tr>
-                          <td>Mfd Date</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>Country of Origin</td>
-                          <td>India</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div
-                    className="product-detail-product-description-container-box-show-more"
-                    onClick={readHeight}
-                  >
-                    {text} <i className="fa fa-angle-down"></i>
-                  </div>
-                </div>
-              </div>
-              <div className="heading2">CUSTOMERS ALSO VIEWED</div>
+              <ProductDescription></ProductDescription>
+              <div className="heading2" style={{paddingTop:"11px"}}>CUSTOMERS ALSO VIEWED</div>
               <div className="product-detail-other-product-slider">
                 <div className="padd">
                   <Slider {...settings3}>

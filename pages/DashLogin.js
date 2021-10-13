@@ -99,7 +99,7 @@ function DashLogin() {
 
                   <div class="col-md-12">
                     <div class="signup-form-field">
-                      <label>OR</label>
+                      <label style={{paddingBottom:"15px"}}>OR</label>
 
                       <button
                         name="req_otp"
